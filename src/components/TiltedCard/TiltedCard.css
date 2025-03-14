@@ -1,0 +1,97 @@
+/*
+	jsrepo 1.41.2
+	Installed from https://reactbits.dev/default/
+	2-27-2025
+*/
+
+.tilted-card-figure {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	perspective: 800px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.tilted-card-mobile-alert {
+	position: absolute;
+	top: 1rem;
+	text-align: center;
+	font-size: 0.875rem;
+	display: none;
+}
+
+@media (max-width: 640px) {
+	.tilted-card-mobile-alert {
+		display: block;
+	}
+	.tilted-card-caption {
+		display: none;
+	}
+}
+
+.tilted-card-inner {
+	position: relative;
+	transform-style: preserve-3d;
+}
+
+.tilted-card-img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	object-fit: cover;
+	border-radius: 15px;
+	will-change: transform;
+	transform: translateZ(0);
+}
+
+.tilted-card-overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 2;
+	will-change: transform;
+	transform: translateZ(30px);
+}
+
+.tilted-card-caption {
+	pointer-events: none;
+	position: absolute;
+	left: 0;
+	top: 0;
+	border-radius: 4px;
+	background-color: #fff;
+	padding: 4px 10px;
+	font-size: 10px;
+	color: #2d2d2d;
+	opacity: 0;
+	z-index: 3;
+}
+
+.tilted-card-demo-text {
+	margin: 25px 30px;
+	background-color: rgba(0, 0, 0, 0.4);
+	border-radius: 50px;
+	padding: 0.5rem 1.25rem;
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(8px);
+	-webkit-backdrop-filter: blur(8px);
+	border: 1px solid rgba(255, 255, 255, 0.2);
+	color: white;
+}
+
+/* .tilted-card-demo-text {
+	background-color: rgba(90, 90, 90, 0.85);
+	color: white;
+  margin: 50px 100px;
+	padding: 0.5rem 1.25rem;
+	border-radius: 50px;
+	font-size: 1.125rem;
+	font-weight: 500;
+	backdrop-filter: blur(4px);
+	-webkit-backdrop-filter: blur(4px);
+	box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+	white-space: nowrap;
+} */
