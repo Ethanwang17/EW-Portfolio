@@ -1,9 +1,4 @@
-import {
-	BrowserRouter as Router,
-	Routes,
-	Route,
-	Navigate,
-} from "react-router-dom";
+import {HashRouter as Router, Routes, Route, Navigate} from "react-router-dom";
 import {useState} from "react";
 import HomePage from "./pages/Home"; // Create a separate homepage component
 import LoadingScreen from "./components/LoadingScreen";
