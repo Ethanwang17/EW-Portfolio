@@ -90,7 +90,7 @@ const Home = () => {
 				>
 					<div className="main-heading-text">
 						Ethan <br />
-						Wang
+						Wang TEST
 						<div className="subheading">
 							Hello! I craft seamless digital experiences with
 							code and creativity.
