@@ -13,10 +13,6 @@ export default defineConfig({
 	assetsInclude: ["**/*.glb"],
 	build: {
 		outDir: "dist",
-		rollupOptions: {
-			output: {
-				manualChunks: undefined,
-			},
-		},
+		assetsInclude: ["**/*.jsx"],
 	},
 });
