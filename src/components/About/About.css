@@ -37,7 +37,14 @@
 
 .about-image-container {
 	flex: 1;
-	max-width: 50%;
+	/* max-width: 50%; */
+	width: 400px; /* Adjust width as needed */
+	height: 600px; /* Adjust height to maintain 2:3 aspect ratio */
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 10px;
 }
 
 .about-image {
@@ -45,6 +52,7 @@
 	height: auto;
 	border-radius: 0.5rem;
 	object-fit: cover;
+	transform: translateY(-15%); /* Move the image up by 10% */
 }
 
 .about-description {

@@ -39,7 +39,7 @@ const About = () => {
 						transition={{duration: 0.8, delay: 0.4}}
 					>
 						<img
-							src="https://framerusercontent.com/images/obb3zqFbOI0plXvmcRLAGwYDM.jpeg"
+							src="public/images/ethanProfilePic.jpg"
 							alt="Professional portrait"
 							className="about-image"
 						/>

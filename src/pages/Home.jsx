@@ -7,6 +7,7 @@ import {Marquee} from "@/components/magicui/marquee";
 import SplitText from "../TextAnimations/SplitText/SplitText";
 import {motion} from "framer-motion";
 import About from "../components/About/About";
+import Footer from "../components/Footer";
 import {
 	IconHome,
 	IconFolder,
@@ -90,7 +91,7 @@ const Home = () => {
 				>
 					<div className="main-heading-text">
 						Ethan <br />
-						Wang TEST
+						Wang
 						<div className="subheading">
 							Hello! I craft seamless digital experiences with
 							code and creativity.
@@ -231,10 +232,13 @@ const Home = () => {
 				>
 					<h2>Meet Ethan</h2>
 				</motion.div>
-				
+
 				{/* Add the About component here */}
 				<About />
 			</motion.div>
+
+			{/* Add Footer component */}
+			<Footer />
 		</div>
 	);
 };

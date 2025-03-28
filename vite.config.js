@@ -4,7 +4,7 @@ import path from "path";
 
 export default defineConfig({
 	plugins: [react()],
-	base: "/EW-Portfolio/", // Replace with your actual repository name
+	base: "/", // Updated for custom domain
 	resolve: {
 		alias: {
 			"@": path.resolve(__dirname, "./src"),
