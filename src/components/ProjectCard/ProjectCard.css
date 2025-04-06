@@ -1,0 +1,119 @@
+.project-card {
+	display: flex;
+	background-color: #f8f8f8;
+	border-radius: 20px;
+	overflow: hidden;
+	box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+	margin-bottom: 40px;
+	max-height: 400px;
+}
+
+.project-card-content {
+	flex: 1;
+	padding: 40px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+}
+
+.project-card-icon {
+	margin-bottom: 16px;
+	width: 48px;
+	height: 48px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 12px;
+}
+
+.project-card-title {
+	font-size: 2.2rem;
+	font-weight: 700;
+	margin-bottom: 10px;
+	color: #222;
+}
+
+.project-card-company-year {
+	display: flex;
+	align-items: center;
+	margin-bottom: 20px;
+	font-size: 0.9rem;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+}
+
+.project-card-company {
+	font-weight: 600;
+	color: #555;
+}
+
+.project-card-dot {
+	margin: 0 8px;
+	color: #999;
+}
+
+.project-card-year {
+	color: #777;
+}
+
+.project-card-description {
+	margin-bottom: 30px;
+	color: #555;
+	line-height: 1.6;
+	font-size: 1rem;
+	flex-grow: 1;
+}
+
+.project-card-button {
+	display: inline-flex;
+	align-items: center;
+	gap: 8px;
+	background: none;
+	border: none;
+	cursor: pointer;
+	font-weight: 600;
+	color: #333;
+	font-size: 0.9rem;
+	padding: 0;
+	text-decoration: none;
+	align-self: flex-start;
+	border-bottom: 1px solid transparent;
+	transition: border-color 0.2s ease;
+	padding-bottom: 2px;
+}
+
+.project-card-button:hover {
+	border-bottom: 1px solid #333;
+}
+
+.project-card-image {
+	flex: 1;
+	position: relative;
+	min-width: 45%;
+	max-width: 55%;
+	overflow: hidden;
+}
+
+.project-card-image img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+}
+
+@media (max-width: 768px) {
+	.project-card {
+		flex-direction: column;
+		max-height: none;
+	}
+
+	.project-card-content {
+		padding: 30px;
+	}
+
+	.project-card-image {
+		min-width: 100%;
+		max-width: 100%;
+		height: 250px;
+	}
+}

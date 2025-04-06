@@ -2,7 +2,7 @@
 import React, {useState, useEffect} from "react";
 import Dock from "../components/Dock/Dock";
 import Lanyard from "../components/Lanyard/Lanyard";
-import TiltedCard from "../components/TiltedCard/TiltedCard";
+import ProjectCard from "../components/ProjectCard/ProjectCard";
 import {Marquee} from "@/components/magicui/marquee";
 import SplitText from "../TextAnimations/SplitText/SplitText";
 import {motion} from "framer-motion";
@@ -139,7 +139,7 @@ const Home = () => {
 				</motion.div>
 			</div>
 
-			<motion.div className="tilted-cards-container">
+			<motion.div className="project-cards-container">
 				<motion.div
 					initial={{opacity: 0, x: -100}}
 					whileInView={{opacity: 1, x: 0}}
@@ -159,58 +159,93 @@ const Home = () => {
 					whileInView={{opacity: 1, y: 0}}
 					viewport={{once: true, margin: "-100px"}}
 					transition={{duration: 0.6}}
-					className="tilted-cards-grid"
+					className="project-cards-grid"
 				>
-					<TiltedCard
-						imageSrc="https://i.scdn.co/image/ab67616d0000b273d9985092cd88bffd97653b58"
-						altText="Kendrick Lamar - GNX Album Cover"
-						captionText="Kendrick Lamar - GNX"
-						containerHeight="650px"
-						containerWidth="100%"
-						imageHeight="600px"
-						imageWidth="100%"
-						rotateAmplitude={4}
-						scaleOnHover={1.1}
-						showMobileWarning={false}
-						showTooltip={false}
-						displayOverlayContent={true}
-						overlayContent={
-							<p className="tilted-card-demo-text">TSMC</p>
+					<ProjectCard
+						title="Ticket Genie"
+						company="SNAPCHAT"
+						year="2024"
+						description="Pitched the original prototype and led design for a simpler app that brings Snapchatters closer to their friends."
+						imageSrc="https://placehold.co/600x400"
+						buttonText="Read More"
+						icon={
+							<div
+								style={{
+									backgroundColor: "#FFFC00",
+									width: "40px",
+									height: "40px",
+									borderRadius: "8px",
+									display: "flex",
+									alignItems: "center",
+									justifyContent: "center",
+								}}
+							>
+								<svg
+									width="24"
+									height="24"
+									viewBox="0 0 24 24"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.58 20 4 16.42 4 12C4 7.58 7.58 4 12 4C16.42 4 20 7.58 20 12C20 16.42 16.42 20 12 20Z"
+										fill="black"
+									/>
+								</svg>
+							</div>
 						}
 					/>
 
-					<TiltedCard
-						imageSrc="https://i.scdn.co/image/ab67616d0000b273d9985092cd88bffd97653b58"
-						altText="Kendrick Lamar - GNX Album Cover"
-						captionText="Kendrick Lamar - GNX"
-						containerHeight="650px"
-						containerWidth="100%"
-						imageHeight="600px"
-						imageWidth="100%"
-						rotateAmplitude={4}
-						scaleOnHover={1.1}
-						showMobileWarning={false}
-						showTooltip={false}
-						displayOverlayContent={true}
-						overlayContent={
-							<p className="tilted-card-demo-text">Mindscape</p>
+					<ProjectCard
+						title="HR Dashboard"
+						company="TSMC"
+						year="2020"
+						description="Redesigning job recommendations based on job seeker activity."
+						imageSrc="https://placehold.co/600x400"
+						buttonText="Read the Case Study"
+						icon={
+							<div>
+								<img
+									src="/images/TSMC Icon.png"
+									alt="TSMC Icon"
+									style={{width: "40px", height: "40px"}}
+								/>
+							</div>
 						}
 					/>
-					<TiltedCard
-						imageSrc="https://i.scdn.co/image/ab67616d0000b273d9985092cd88bffd97653b58"
-						altText="Kendrick Lamar - GNX Album Cover"
-						captionText="Kendrick Lamar - GNX"
-						containerHeight="650px"
-						containerWidth="100%"
-						imageHeight="600px"
-						imageWidth="100%"
-						rotateAmplitude={4}
-						scaleOnHover={1.1}
-						showMobileWarning={false}
-						showTooltip={false}
-						displayOverlayContent={true}
-						overlayContent={
-							<p className="tilted-card-demo-text">Spark</p>
+
+					<ProjectCard
+						title="Eco-Conscious Transportation Planner"
+						company="X-Scape"
+						year="2020"
+						description="Improving a key element in the job seeker experience."
+						imageSrc="/images/X-scape.jpg"
+						buttonText="Read the Case Study"
+						icon={
+							<div>
+								<img
+									src="/images/X-Scape Icon.png"
+									alt="X-Scape Icon"
+									style={{width: "40px", height: "40px"}}
+								/>
+							</div>
+						}
+					/>
+
+					<ProjectCard
+						title="AI-Powered Health App"
+						company="Mindscape"
+						year="2019"
+						description="Dish-level reviews for ordering confidently. Case study coming soon."
+						imageSrc="/images/Mindscape.jpg"
+						icon={
+							<div>
+								<img
+									src="/images/Mindscape Icon.png"
+									alt="Mindscape Icon"
+									style={{width: "40px", height: "40px"}}
+								/>
+							</div>
 						}
 					/>
 				</motion.div>

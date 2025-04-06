@@ -344,9 +344,8 @@
 .footer-container {
 	width: 100%;
 	padding: 4rem;
-	background-color: #ffffff;
+	background-color: #faf9f6;
 	color: #000000;
-	font-family: "Inter", system-ui, -apple-system, sans-serif;
 }
 
 .footer-content {
@@ -464,5 +463,36 @@
 
 	.lets-talk {
 		font-size: clamp(3rem, 8vw, 8rem);
+	}
+}
+
+/* Project Cards Section */
+.project-cards-container {
+	padding: 80px 20px;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.project-cards-container h2 {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-bottom: 40px;
+	color: #222;
+}
+
+.project-cards-grid {
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+}
+
+@media (max-width: 768px) {
+	.project-cards-container {
+		padding: 60px 16px;
+	}
+
+	.project-cards-container h2 {
+		font-size: 2rem;
+		margin-bottom: 30px;
 	}
 }

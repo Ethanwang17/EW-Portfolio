@@ -25,7 +25,7 @@ const Footer = () => {
 			</div>
 
 			<div className="footer-project">
-				<p className="project-heading">HAVE A PROJECT IN MIND?</p>
+				<p className="project-heading">HAVE WORK IN MIND?</p>
 				<h2 className="lets-talk">LET'S TALK</h2>
 			</div>
 
@@ -58,15 +58,10 @@ const Footer = () => {
 				</div>
 
 				<div className="credits">
+
 					<p>
-						Design by{" "}
-						<span className="credit-name">
-							The Avxxy Design Studio
-						</span>
-					</p>
-					<p>
-						Development by{" "}
-						<span className="credit-name">Andrew Glago</span>
+						Designed & Developed by{" "}
+						<span className="credit-name">Ethan Wang</span>
 					</p>
 				</div>
 			</div>

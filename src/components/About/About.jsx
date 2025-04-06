@@ -24,9 +24,10 @@ const About = () => {
 					transition={{duration: 0.8, delay: 0.2}}
 				>
 					<p>
-						I collaborate with businesses of all sizes worldwide,
-						using the latest technologies. My designs have also
-						earned multiple awards.
+						I craft sleek, user-focused web experiences using modern
+						frameworks and tools. From startups to global teams, I
+						build intuitive, scalable interfaces that leave a
+						lasting impact.
 					</p>
 				</motion.div>
 
@@ -39,7 +40,7 @@ const About = () => {
 						transition={{duration: 0.8, delay: 0.4}}
 					>
 						<img
-							src="public/images/ethanProfilePic.jpg"
+							src="/images/ethanProfilePic.jpg"
 							alt="Professional portrait"
 							className="about-image"
 						/>
@@ -53,9 +54,9 @@ const About = () => {
 						transition={{duration: 0.8, delay: 0.6}}
 					>
 						<p>
-							I'm dedicated to crafting beautiful and highly
-							functional designs that seamlessly align with my
-							clients' unique needs and long-term goals.
+							With a strong eye for design and deep technical
+							skills, I bring modern web applications to life—from
+							concept to deployment.
 						</p>
 					</motion.div>
 				</div>
