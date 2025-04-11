@@ -162,38 +162,22 @@ const Home = () => {
 					className="project-cards-grid"
 				>
 					<ProjectCard
-						title="Ticket Genie"
-						company="SNAPCHAT"
+						title="Ticket Alerts App"
+						company="Ticket Genie"
 						year="2024"
 						description="Pitched the original prototype and led design for a simpler app that brings Snapchatters closer to their friends."
-						imageSrc="https://placehold.co/600x400"
-						buttonText="Read More"
+						imageSrc="/images/Ticket Genie.jpg"
+						buttonText="Read the Case Study"
 						icon={
-							<div
-								style={{
-									backgroundColor: "#FFFC00",
-									width: "40px",
-									height: "40px",
-									borderRadius: "8px",
-									display: "flex",
-									alignItems: "center",
-									justifyContent: "center",
-								}}
-							>
-								<svg
-									width="24"
-									height="24"
-									viewBox="0 0 24 24"
-									fill="none"
-									xmlns="http://www.w3.org/2000/svg"
-								>
-									<path
-										d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.58 20 4 16.42 4 12C4 7.58 7.58 4 12 4C16.42 4 20 7.58 20 12C20 16.42 16.42 20 12 20Z"
-										fill="black"
-									/>
-								</svg>
+							<div>
+								<img
+									src="/images/Ticket Genie Icon.png"
+									alt="Ticket Genie Icon"
+									style={{width: "40px", height: "40px"}}
+								/>
 							</div>
 						}
+						buttonLink="/casestudy1"
 					/>
 
 					<ProjectCard
@@ -201,7 +185,7 @@ const Home = () => {
 						company="TSMC"
 						year="2020"
 						description="Redesigning job recommendations based on job seeker activity."
-						imageSrc="https://placehold.co/600x400"
+						imageSrc="/images/TSMC.jpg"
 						buttonText="Read the Case Study"
 						icon={
 							<div>
@@ -212,6 +196,7 @@ const Home = () => {
 								/>
 							</div>
 						}
+						buttonLink="/casestudy2"
 					/>
 
 					<ProjectCard
@@ -230,6 +215,7 @@ const Home = () => {
 								/>
 							</div>
 						}
+						buttonLink="/casestudy3"
 					/>
 
 					<ProjectCard
@@ -247,6 +233,7 @@ const Home = () => {
 								/>
 							</div>
 						}
+						buttonLink="/casestudy4"
 					/>
 				</motion.div>
 			</motion.div>

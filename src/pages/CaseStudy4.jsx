@@ -2,10 +2,10 @@ import React from "react";
 import {motion} from "framer-motion";
 import {Link} from "react-router-dom";
 
-const CaseStudy2 = () => {
+const CaseStudy4 = () => {
 	return (
 		<div
-			className="case-study-two"
+			className="case-study-four"
 			style={{
 				backgroundColor: "#faf9f6",
 				color: "#222",
@@ -78,8 +78,8 @@ const CaseStudy2 = () => {
 						}}
 					>
 						<img
-							src="/images/tsmc-icon-placeholder.png"
-							alt="Company Icon"
+							src="/images/Mindscape Icon.png"
+							alt="Mindscape Icon"
 							style={{
 								width: "100%",
 								height: "100%",
@@ -98,10 +98,10 @@ const CaseStudy2 = () => {
 						}}
 					>
 						<span style={{fontWeight: 600, color: "#555"}}>
-							TSMC HR Web App
+							Mindscape Project
 						</span>
 						<span style={{color: "#777"}}>•</span>
-						<span style={{color: "#777"}}>Internship</span>
+						<span style={{color: "#777"}}>2024</span>
 					</div>
 				</div>
 			</motion.nav>
@@ -132,7 +132,7 @@ const CaseStudy2 = () => {
 							marginBottom: "30px",
 						}}
 					>
-						TSMC HR Web App
+						MindScape
 					</h1>
 
 					<p
@@ -144,12 +144,13 @@ const CaseStudy2 = () => {
 							maxWidth: "500px",
 						}}
 					>
-						Tasked with modernizing a slow, outdated internal HR
-						system used by thousands of employees, our team at TSMC
-						was challenged to build a scalable, cloud-based HR web
-						application that could process data faster, integrate
-						seamlessly with existing .NET architecture, and improve
-						the overall employee experience.
+						A digital health platform designed to bridge the gap in
+						mental health monitoring by shifting from subjective
+						self-reporting to real-time, biometric-driven insights.
+						This project addresses the rising need for early mental
+						health intervention and empowers individuals with
+						actionable, data-informed tools for emotional
+						well-being.
 					</p>
 
 					<div
@@ -194,7 +195,7 @@ const CaseStudy2 = () => {
 								boxShadow: "0 2px 8px rgba(0, 0, 0, 0.05)",
 							}}
 						>
-							Enterprise Software
+							Product Strategy
 						</span>
 					</div>
 				</motion.div>
@@ -212,8 +213,8 @@ const CaseStudy2 = () => {
 					}}
 				>
 					<img
-						src="/images/tsmc-hero-placeholder.jpg"
-						alt="TSMC HR Web App Hero"
+						src="/images/placeholder-hero.jpg"
+						alt="Project Hero"
 						style={{
 							width: "100%",
 							height: "100%",
@@ -279,6 +280,63 @@ const CaseStudy2 = () => {
 										color: "#222",
 									}}
 								>
+									85%
+								</h3>
+								<p
+									style={{
+										fontSize: "1rem",
+										color: "#555",
+									}}
+								>
+									confidence rate in early detection metrics
+									from user testing
+								</p>
+							</div>
+							<div
+								style={{
+									textAlign: "center",
+									padding: "30px",
+									borderRadius: "20px",
+									boxShadow: "0 4px 20px rgba(0, 0, 0, 0.03)",
+									backgroundColor: "#faf9f6",
+								}}
+							>
+								<h3
+									style={{
+										fontSize: "2.8rem",
+										fontWeight: 700,
+										marginBottom: "10px",
+										color: "#222",
+									}}
+								>
+									12,000+
+								</h3>
+								<p
+									style={{
+										fontSize: "1rem",
+										color: "#555",
+									}}
+								>
+									data samples analyzed across test dashboards
+								</p>
+							</div>
+							<div
+								style={{
+									textAlign: "center",
+									padding: "30px",
+									borderRadius: "20px",
+									boxShadow: "0 4px 20px rgba(0, 0, 0, 0.03)",
+									backgroundColor: "#faf9f6",
+								}}
+							>
+								<h3
+									style={{
+										fontSize: "2.8rem",
+										fontWeight: 700,
+										marginBottom: "10px",
+										color: "#222",
+									}}
+								>
 									40%
 								</h3>
 								<p
@@ -287,63 +345,8 @@ const CaseStudy2 = () => {
 										color: "#555",
 									}}
 								>
-									Increase in HR data processing speed
-								</p>
-							</div>
-							<div
-								style={{
-									textAlign: "center",
-									padding: "30px",
-									borderRadius: "20px",
-									boxShadow: "0 4px 20px rgba(0, 0, 0, 0.03)",
-									backgroundColor: "#faf9f6",
-								}}
-							>
-								<h3
-									style={{
-										fontSize: "2.8rem",
-										fontWeight: 700,
-										marginBottom: "10px",
-										color: "#222",
-									}}
-								>
-									5,000+
-								</h3>
-								<p
-									style={{
-										fontSize: "1rem",
-										color: "#555",
-									}}
-								>
-									Employees impacted across the organization
-								</p>
-							</div>
-							<div
-								style={{
-									textAlign: "center",
-									padding: "30px",
-									borderRadius: "20px",
-									boxShadow: "0 4px 20px rgba(0, 0, 0, 0.03)",
-									backgroundColor: "#faf9f6",
-								}}
-							>
-								<h3
-									style={{
-										fontSize: "2.8rem",
-										fontWeight: 700,
-										marginBottom: "10px",
-										color: "#222",
-									}}
-								>
-									15%
-								</h3>
-								<p
-									style={{
-										fontSize: "1rem",
-										color: "#555",
-									}}
-								>
-									Reduction in system downtime
+									of users indicated improved awareness of
+									mental health signals
 								</p>
 							</div>
 						</div>
@@ -358,20 +361,14 @@ const CaseStudy2 = () => {
 								textAlign: "center",
 							}}
 						>
-							The Human Resources department at TSMC was
-							struggling with a legacy system that could no longer
-							keep up with the scale of operations or the demands
-							of modern employees. I was brought on as a Software
-							Engineer Intern to lead the development of the
-							frontend for a complete overhaul of this system,
-							working directly with senior engineers and HR
-							stakeholders. My role extended beyond just building
-							React components—I contributed to backend API
-							design, database optimization, and cloud deployment
-							using Microsoft Azure. The result was a secure,
-							scalable, and responsive web application that
-							significantly improved HR operations and employee
-							satisfaction.
+							MindScape is an innovative app that leverages
+							wearable data, machine learning, and health
+							dashboards to detect early signs of mental health
+							concerns like anxiety. Built with the goal of
+							empowering individuals to proactively manage their
+							mental well-being, the platform offers insights from
+							biometric patterns and identifies anomalies through
+							AI.
 						</p>
 					</motion.div>
 				</div>
@@ -435,11 +432,11 @@ const CaseStudy2 = () => {
 							marginBottom: "30px",
 						}}
 					>
-						The legacy HR system was slow, prone to errors, and
-						difficult for employees to use—especially across
-						different devices. Our goal was to rebuild it from the
-						ground up with a modern tech stack, focusing on
-						usability, speed, and scalability.
+						Traditional mental health monitoring relies heavily on
+						subjective self-reporting, which often fails to capture
+						real-time symptoms or subtle biometric changes. This
+						results in delayed interventions and missed
+						opportunities for preventative care.
 					</p>
 
 					<div
@@ -474,8 +471,7 @@ const CaseStudy2 = () => {
 									marginBottom: "10px",
 								}}
 							>
-								Creating a responsive, accessible frontend for
-								5,000+ diverse users
+								Reducing reliance on subjective self-reports
 							</li>
 							<li
 								style={{
@@ -485,8 +481,8 @@ const CaseStudy2 = () => {
 									marginBottom: "10px",
 								}}
 							>
-								Designing and integrating with a scalable REST
-								API using .NET and SQL Server
+								Identifying biometric outliers accurately and
+								meaningfully
 							</li>
 							<li
 								style={{
@@ -496,30 +492,8 @@ const CaseStudy2 = () => {
 									marginBottom: "10px",
 								}}
 							>
-								Handling large concurrent data requests with
-								minimal latency
-							</li>
-							<li
-								style={{
-									fontSize: "1.05rem",
-									lineHeight: 1.6,
-									color: "#555",
-									marginBottom: "10px",
-								}}
-							>
-								Ensuring secure login and data protection for
-								sensitive HR records
-							</li>
-							<li
-								style={{
-									fontSize: "1.05rem",
-									lineHeight: 1.6,
-									color: "#555",
-									marginBottom: "10px",
-								}}
-							>
-								Migrating to Microsoft Azure cloud
-								infrastructure without disrupting operations
+								Addressing potential misuse and ethical concerns
+								in AI diagnosis
 							</li>
 						</ul>
 					</div>
@@ -536,7 +510,7 @@ const CaseStudy2 = () => {
 					>
 						<img
 							src="/images/placeholder-image.jpg"
-							alt="Challenge visualization"
+							alt="📉 Challenge visualization: Timeline showing the delay between symptom onset and self-reporting vs. biometric alerts"
 							style={{
 								width: "100%",
 								height: "100%",
@@ -596,16 +570,11 @@ const CaseStudy2 = () => {
 							marginBottom: "30px",
 						}}
 					>
-						We interviewed internal users (HR staff and employees)
-						and conducted usability testing on the old system. We
-						discovered: Slow query speeds were frustrating users,
-						especially during onboarding or payroll weeks. The
-						mobile experience was nearly unusable. The interface
-						lacked intuitive navigation, especially for
-						non-technical users. We also worked with the backend
-						team to define API requirements and security standards,
-						particularly around authentication, authorization, and
-						data consistency.
+						Our research combined interviews, literature reviews,
+						and prototype testing. We explored the role of AI in
+						mental health diagnosis, user comfort with biometric
+						monitoring, and the accuracy of current wearable data
+						analytics.
 					</p>
 
 					<div
@@ -628,7 +597,7 @@ const CaseStudy2 = () => {
 						>
 							<img
 								src="/images/placeholder-image.jpg"
-								alt="User Research Visualization"
+								alt="🧠 Research image 1: Heatmap of app user engagement"
 								style={{
 									width: "100%",
 									height: "100%",
@@ -649,7 +618,7 @@ const CaseStudy2 = () => {
 						>
 							<img
 								src="/images/placeholder-image.jpg"
-								alt="User Persona or Flow Diagram"
+								alt="📊 Research image 2: Interview word cloud on trust in AI"
 								style={{
 									width: "100%",
 									height: "100%",
@@ -677,42 +646,20 @@ const CaseStudy2 = () => {
 						>
 							Key Insights:
 						</h3>
-						<ul style={{paddingLeft: "20px"}}>
-							<li
-								style={{
-									fontSize: "1.05rem",
-									lineHeight: 1.6,
-									color: "#555",
-									marginBottom: "10px",
-								}}
-							>
-								Most users wanted a clean, mobile-friendly UI
-								they could access outside of office hours
-							</li>
-							<li
-								style={{
-									fontSize: "1.05rem",
-									lineHeight: 1.6,
-									color: "#555",
-									marginBottom: "10px",
-								}}
-							>
-								HR staff needed batch processing tools and
-								faster data retrieval
-							</li>
-							<li
-								style={{
-									fontSize: "1.05rem",
-									lineHeight: 1.6,
-									color: "#555",
-									marginBottom: "10px",
-								}}
-							>
-								The system had to meet strict uptime and
-								security expectations—common in the
-								semiconductor industry
-							</li>
-						</ul>
+						<p
+							style={{
+								fontSize: "1.05rem",
+								lineHeight: 1.6,
+								color: "#555",
+								marginBottom: "20px",
+							}}
+						>
+							AI can detect anxiety symptoms with up to 92%
+							accuracy. Therapists see AI as a tool to ease
+							workload. Users trust AI but worry about incorrect
+							predictions. Clear data presentation and outlier
+							transparency are essential.
+						</p>
 					</div>
 				</motion.div>
 
@@ -766,13 +713,11 @@ const CaseStudy2 = () => {
 							marginBottom: "40px",
 						}}
 					>
-						The TSMC HR Web App was developed using a React
-						frontend, integrated with a .NET backend via a
-						well-documented set of REST APIs. I focused on the
-						frontend development, including building secure login
-						flows, dynamic dashboards, and data entry forms, while
-						also working closely with backend engineers on API
-						consumption and database interactions.
+						MindScape offers a personal mental health dashboard
+						hosted on Splunk that collects data from IoT/wearable
+						devices, categorizes it, and uses machine learning to
+						highlight health anomalies. The mobile-friendly app
+						features user customization and clear visual insights.
 					</p>
 
 					<div
@@ -805,7 +750,7 @@ const CaseStudy2 = () => {
 									color: "#222",
 								}}
 							>
-								Responsive React Frontend
+								Biometric Data Aggregation
 							</h3>
 							<p
 								style={{
@@ -814,11 +759,8 @@ const CaseStudy2 = () => {
 									color: "#555",
 								}}
 							>
-								Designed and built a clean, responsive UI using
-								React and Tailwind CSS. Ensured full
-								accessibility compliance, responsive layout
-								behavior, and usability across browsers and
-								devices.
+								Syncs with wearable devices to collect
+								continuous health data.
 							</p>
 						</motion.div>
 
@@ -843,7 +785,7 @@ const CaseStudy2 = () => {
 									color: "#222",
 								}}
 							>
-								Secure API Integration
+								Machine Learning Insights
 							</h3>
 							<p
 								style={{
@@ -852,10 +794,8 @@ const CaseStudy2 = () => {
 									color: "#555",
 								}}
 							>
-								Integrated RESTful APIs built in .NET Core with
-								role-based authentication, allowing HR teams to
-								manage employee records with greater efficiency
-								and security.
+								Detects and highlights outliers like abnormal
+								heart rates or sleep patterns.
 							</p>
 						</motion.div>
 
@@ -880,7 +820,7 @@ const CaseStudy2 = () => {
 									color: "#222",
 								}}
 							>
-								Azure Cloud Deployment
+								Customizable Dashboards
 							</h3>
 							<p
 								style={{
@@ -889,11 +829,8 @@ const CaseStudy2 = () => {
 									color: "#555",
 								}}
 							>
-								The app was deployed on Microsoft Azure, using
-								App Services and SQL Server integration. This
-								allowed the system to scale easily and benefit
-								from Azure's built-in monitoring, alerts, and
-								auto-scaling.
+								Users can track metrics, personalize their
+								profile, and explore trends over time.
 							</p>
 						</motion.div>
 					</div>
@@ -910,7 +847,7 @@ const CaseStudy2 = () => {
 					>
 						<img
 							src="/images/placeholder-image.jpg"
-							alt="Solution Mockup Showcase"
+							alt="📱 Solution showcase: Mobile dashboard displaying sleep, heart rate, and activity trends with outlier highlights"
 							style={{
 								width: "100%",
 								height: "100%",
@@ -970,12 +907,11 @@ const CaseStudy2 = () => {
 							marginBottom: "30px",
 						}}
 					>
-						The new HR application improved performance, usability,
-						and reliability across the board. Processing speed for
-						large HR datasets increased by 40%, while downtime and
-						latency were reduced due to more efficient API and
-						database design. The HR department reported improved
-						workflow efficiency and employee satisfaction.
+						MindScape's success stems from its combination of
+						personalized insights and transparent analytics. With
+						strong user validation and a scalable Splunk backend,
+						the app offers a viable prototype for future development
+						and enterprise integration.
 					</p>
 
 					<blockquote
@@ -993,10 +929,9 @@ const CaseStudy2 = () => {
 							margin: "40px 0",
 						}}
 					>
-						"The new system feels like night and day. We're no
-						longer held back by clunky interfaces or slow loading
-						times—and our team can finally focus on people, not
-						process."
+						🗣️ "MindScape helped me visualize my stress patterns in
+						a way I never could before. I now know when to take
+						breaks before it's too late."
 						<footer
 							style={{
 								marginTop: "15px",
@@ -1006,7 +941,7 @@ const CaseStudy2 = () => {
 								fontStyle: "normal",
 							}}
 						>
-							— Internal HR Staff Member
+							— Early user tester
 						</footer>
 					</blockquote>
 				</motion.div>
@@ -1053,7 +988,7 @@ const CaseStudy2 = () => {
 								boxShadow: "0 2px 8px rgba(0, 0, 0, 0.05)",
 							}}
 						>
-							React.js (frontend)
+							React (Frontend)
 						</span>
 						<span
 							style={{
@@ -1065,7 +1000,7 @@ const CaseStudy2 = () => {
 								boxShadow: "0 2px 8px rgba(0, 0, 0, 0.05)",
 							}}
 						>
-							Tailwind CSS
+							Node.js (Backend + API integration)
 						</span>
 						<span
 							style={{
@@ -1077,7 +1012,7 @@ const CaseStudy2 = () => {
 								boxShadow: "0 2px 8px rgba(0, 0, 0, 0.05)",
 							}}
 						>
-							.NET Core / C# (backend API)
+							Splunk (Data analysis dashboard)
 						</span>
 						<span
 							style={{
@@ -1089,7 +1024,7 @@ const CaseStudy2 = () => {
 								boxShadow: "0 2px 8px rgba(0, 0, 0, 0.05)",
 							}}
 						>
-							Microsoft Azure (deployment)
+							Figma (UI/UX prototyping)
 						</span>
 						<span
 							style={{
@@ -1101,43 +1036,7 @@ const CaseStudy2 = () => {
 								boxShadow: "0 2px 8px rgba(0, 0, 0, 0.05)",
 							}}
 						>
-							SQL Server (relational database)
-						</span>
-						<span
-							style={{
-								padding: "8px 16px",
-								backgroundColor: "#faf9f6",
-								borderRadius: "100px",
-								fontSize: "0.9rem",
-								color: "#555",
-								boxShadow: "0 2px 8px rgba(0, 0, 0, 0.05)",
-							}}
-						>
-							Postman & Swagger (API testing/documentation)
-						</span>
-						<span
-							style={{
-								padding: "8px 16px",
-								backgroundColor: "#faf9f6",
-								borderRadius: "100px",
-								fontSize: "0.9rem",
-								color: "#555",
-								boxShadow: "0 2px 8px rgba(0, 0, 0, 0.05)",
-							}}
-						>
-							Git + Azure DevOps Pipelines
-						</span>
-						<span
-							style={{
-								padding: "8px 16px",
-								backgroundColor: "#faf9f6",
-								borderRadius: "100px",
-								fontSize: "0.9rem",
-								color: "#555",
-								boxShadow: "0 2px 8px rgba(0, 0, 0, 0.05)",
-							}}
-						>
-							Figma (UI mockups)
+							HealthKit + IoT APIs (Biometric data input)
 						</span>
 					</div>
 				</motion.div>
@@ -1177,7 +1076,7 @@ const CaseStudy2 = () => {
 							margin: "0 auto 30px",
 						}}
 					>
-						Interested in discussing projects or opportunities? I'd
+						Interested in collaborating on a similar project? I'd
 						love to hear from you!
 					</p>
 					<Link
@@ -1350,4 +1249,4 @@ const CaseStudy2 = () => {
 	);
 };
 
-export default CaseStudy2;
+export default CaseStudy4;
