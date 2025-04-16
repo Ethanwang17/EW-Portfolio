@@ -13,6 +13,10 @@ const ProjectCard = ({
 	buttonLink = "#",
 	icon,
 }) => {
+	const handleClick = () => {
+		window.scrollTo(0, 0);
+	};
+
 	return (
 		<div className="project-card">
 			<div className="project-card-content">
@@ -29,7 +33,11 @@ const ProjectCard = ({
 					whileHover={{scale: 1.05}}
 					whileTap={{scale: 0.95}}
 				>
-					<Link to={buttonLink} className="project-card-link-wrapper">
+					<Link
+						to={buttonLink}
+						className="project-card-link-wrapper"
+						onClick={handleClick}
+					>
 						{buttonText}
 						<svg
 							width="16"

@@ -36,6 +36,7 @@ const CaseStudy4 = () => {
 						fontWeight: 600,
 						fontSize: "0.95rem",
 					}}
+					onClick={() => window.scrollTo(0, 0)}
 				>
 					<svg
 						width="18"
@@ -144,13 +145,14 @@ const CaseStudy4 = () => {
 							maxWidth: "500px",
 						}}
 					>
-						A digital health platform designed to bridge the gap in
-						mental health monitoring by shifting from subjective
-						self-reporting to real-time, biometric-driven insights.
-						This project addresses the rising need for early mental
-						health intervention and empowers individuals with
-						actionable, data-informed tools for emotional
-						well-being.
+						MindScape addresses the limitations of self-reported
+						mental health tracking by introducing a biometric-driven
+						approach to emotional well-being. Through wearable
+						integration and machine learning, MindScape provides
+						more accurate, timely insights—bridging the gap between
+						preventative care and early detection. This matters
+						because early intervention in mental health can
+						significantly improve long-term outcomes.
 					</p>
 
 					<div
@@ -183,7 +185,7 @@ const CaseStudy4 = () => {
 								boxShadow: "0 2px 8px rgba(0, 0, 0, 0.05)",
 							}}
 						>
-							Web Development
+							IOS Development
 						</span>
 						<span
 							style={{
@@ -195,7 +197,7 @@ const CaseStudy4 = () => {
 								boxShadow: "0 2px 8px rgba(0, 0, 0, 0.05)",
 							}}
 						>
-							Product Strategy
+							Machine Learning
 						</span>
 					</div>
 				</motion.div>
@@ -209,16 +211,19 @@ const CaseStudy4 = () => {
 						borderRadius: "20px",
 						overflow: "hidden",
 						height: "500px",
-						boxShadow: "0 10px 40px rgba(0, 0, 0, 0.08)",
+						// boxShadow: "0 10px 40px rgba(0, 0, 0, 0.08)",
 					}}
 				>
 					<img
-						src="/images/placeholder-hero.jpg"
+						src="/images/Mindscape Hero Mockup.png"
 						alt="Project Hero"
 						style={{
-							width: "100%",
+							// width: "100%",
 							height: "100%",
 							objectFit: "cover",
+							objectPosition: "center",
+							display: "block",
+							margin: "0 auto",
 						}}
 					/>
 				</motion.div>
@@ -288,8 +293,8 @@ const CaseStudy4 = () => {
 										color: "#555",
 									}}
 								>
-									confidence rate in early detection metrics
-									from user testing
+									user confidence in design and feature
+									usefulness after testing
 								</p>
 							</div>
 							<div
@@ -317,7 +322,8 @@ const CaseStudy4 = () => {
 										color: "#555",
 									}}
 								>
-									data samples analyzed across test dashboards
+									biometric data points processed for
+									validation
 								</p>
 							</div>
 							<div
@@ -345,8 +351,8 @@ const CaseStudy4 = () => {
 										color: "#555",
 									}}
 								>
-									of users indicated improved awareness of
-									mental health signals
+									improvement in user understanding of their
+									mental health patterns
 								</p>
 							</div>
 						</div>
@@ -361,14 +367,17 @@ const CaseStudy4 = () => {
 								textAlign: "center",
 							}}
 						>
-							MindScape is an innovative app that leverages
-							wearable data, machine learning, and health
-							dashboards to detect early signs of mental health
-							concerns like anxiety. Built with the goal of
-							empowering individuals to proactively manage their
-							mental well-being, the platform offers insights from
-							biometric patterns and identifies anomalies through
-							AI.
+							MindScape is a digital health platform that
+							leverages biometric data, Apple Health integration,
+							and machine learning to detect early signs of mental
+							health concerns. The system offers a personal
+							dashboard hosted on Splunk that highlights outlier
+							data such as irregular sleep patterns or abnormal
+							heart rates. With a secure login, user
+							personalization, and future chatbot integration
+							planned, MindScape empowers users to take charge of
+							their mental well-being in an accessible,
+							data-informed way.
 						</p>
 					</motion.div>
 				</div>
@@ -481,8 +490,8 @@ const CaseStudy4 = () => {
 									marginBottom: "10px",
 								}}
 							>
-								Identifying biometric outliers accurately and
-								meaningfully
+								Making biometric data understandable and
+								actionable
 							</li>
 							<li
 								style={{
@@ -492,13 +501,13 @@ const CaseStudy4 = () => {
 									marginBottom: "10px",
 								}}
 							>
-								Addressing potential misuse and ethical concerns
-								in AI diagnosis
+								Addressing ethical and privacy concerns around
+								AI-driven analysis
 							</li>
 						</ul>
 					</div>
 
-					<motion.div
+					{/* <motion.div
 						whileHover={{scale: 1.03}}
 						transition={{duration: 0.3}}
 						style={{
@@ -509,15 +518,15 @@ const CaseStudy4 = () => {
 						}}
 					>
 						<img
-							src="/images/placeholder-image.jpg"
-							alt="📉 Challenge visualization: Timeline showing the delay between symptom onset and self-reporting vs. biometric alerts"
+							src="/images/Mindscape Challenge Timeline.png"
+							alt="📉 Challenge visualization: Problem timeline showing delay from symptom onset to traditional reporting vs. biometric detection"
 							style={{
 								width: "100%",
 								height: "100%",
 								objectFit: "cover",
 							}}
 						/>
-					</motion.div>
+					</motion.div> */}
 				</motion.div>
 
 				{/* Research Section */}
@@ -579,9 +588,6 @@ const CaseStudy4 = () => {
 
 					<div
 						style={{
-							display: "grid",
-							gridTemplateColumns: "repeat(2, 1fr)",
-							gap: "20px",
 							marginBottom: "30px",
 						}}
 					>
@@ -589,39 +595,21 @@ const CaseStudy4 = () => {
 							whileHover={{scale: 1.03}}
 							transition={{duration: 0.3}}
 							style={{
+								display: "flex",
+								justifyContent: "center",
+								alignItems: "center",
 								borderRadius: "20px",
 								overflow: "hidden",
-								height: "250px",
-								boxShadow: "0 4px 20px rgba(0, 0, 0, 0.05)",
+								height: "auto",
+								// boxShadow: "0 6px 25px rgba(0, 0, 0, 0.06)",
 							}}
 						>
 							<img
-								src="/images/placeholder-image.jpg"
-								alt="🧠 Research image 1: Heatmap of app user engagement"
+								src="/images/Mindscape Research Dashboard.png"
+								alt="📊 Splunk Dashboard showing Heart Rate Outliers, Steps Taken by Time, and another metric with outliers"
 								style={{
-									width: "100%",
-									height: "100%",
-									objectFit: "cover",
-								}}
-							/>
-						</motion.div>
-
-						<motion.div
-							whileHover={{scale: 1.03}}
-							transition={{duration: 0.3}}
-							style={{
-								borderRadius: "20px",
-								overflow: "hidden",
-								height: "250px",
-								boxShadow: "0 4px 20px rgba(0, 0, 0, 0.05)",
-							}}
-						>
-							<img
-								src="/images/placeholder-image.jpg"
-								alt="📊 Research image 2: Interview word cloud on trust in AI"
-								style={{
-									width: "100%",
-									height: "100%",
+									width: "75%",
+									height: "75%",
 									objectFit: "cover",
 								}}
 							/>
@@ -654,11 +642,29 @@ const CaseStudy4 = () => {
 								marginBottom: "20px",
 							}}
 						>
-							AI can detect anxiety symptoms with up to 92%
-							accuracy. Therapists see AI as a tool to ease
-							workload. Users trust AI but worry about incorrect
-							predictions. Clear data presentation and outlier
-							transparency are essential.
+							AI can detect anxiety with 92% accuracy
+						</p>
+						<p
+							style={{
+								fontSize: "1.05rem",
+								lineHeight: 1.6,
+								color: "#555",
+								marginBottom: "20px",
+							}}
+						>
+							Users have high confidence in AI but require clarity
+							and transparency
+						</p>
+						<p
+							style={{
+								fontSize: "1.05rem",
+								lineHeight: 1.6,
+								color: "#555",
+								marginBottom: "20px",
+							}}
+						>
+							Metrics must be clearly defined and customizable to
+							be useful
 						</p>
 					</div>
 				</motion.div>
@@ -750,7 +756,7 @@ const CaseStudy4 = () => {
 									color: "#222",
 								}}
 							>
-								Biometric Data Aggregation
+								Health Dashboard
 							</h3>
 							<p
 								style={{
@@ -759,8 +765,9 @@ const CaseStudy4 = () => {
 									color: "#555",
 								}}
 							>
-								Syncs with wearable devices to collect
-								continuous health data.
+								Intuitive visualizations for sleep, activity,
+								and heart rate patterns with alerts for
+								anomalies.
 							</p>
 						</motion.div>
 
@@ -785,7 +792,7 @@ const CaseStudy4 = () => {
 									color: "#222",
 								}}
 							>
-								Machine Learning Insights
+								Personalized User Profiles
 							</h3>
 							<p
 								style={{
@@ -794,8 +801,8 @@ const CaseStudy4 = () => {
 									color: "#555",
 								}}
 							>
-								Detects and highlights outliers like abnormal
-								heart rates or sleep patterns.
+								Users can change names and profile pictures and
+								access private dashboards securely.
 							</p>
 						</motion.div>
 
@@ -820,7 +827,7 @@ const CaseStudy4 = () => {
 									color: "#222",
 								}}
 							>
-								Customizable Dashboards
+								Machine Learning Analysis
 							</h3>
 							<p
 								style={{
@@ -829,8 +836,8 @@ const CaseStudy4 = () => {
 									color: "#555",
 								}}
 							>
-								Users can track metrics, personalize their
-								profile, and explore trends over time.
+								ML models categorize and highlight biometric
+								outliers for early issue detection.
 							</p>
 						</motion.div>
 					</div>
@@ -846,8 +853,8 @@ const CaseStudy4 = () => {
 						}}
 					>
 						<img
-							src="/images/placeholder-image.jpg"
-							alt="📱 Solution showcase: Mobile dashboard displaying sleep, heart rate, and activity trends with outlier highlights"
+							src="/images/Mindscape iPhone Layout.png"
+							alt="📱 Solution showcase: MindScape mobile view with Splunk-powered charts and outlier detection"
 							style={{
 								width: "100%",
 								height: "100%",
@@ -929,9 +936,9 @@ const CaseStudy4 = () => {
 							margin: "40px 0",
 						}}
 					>
-						🗣️ "MindScape helped me visualize my stress patterns in
-						a way I never could before. I now know when to take
-						breaks before it's too late."
+						"The dashboard made it so much easier to notice when my
+						stress levels were spiking. I've never had that kind of
+						visibility before."
 						<footer
 							style={{
 								marginTop: "15px",
@@ -941,7 +948,7 @@ const CaseStudy4 = () => {
 								fontStyle: "normal",
 							}}
 						>
-							— Early user tester
+							— Early tester
 						</footer>
 					</blockquote>
 				</motion.div>
@@ -988,7 +995,7 @@ const CaseStudy4 = () => {
 								boxShadow: "0 2px 8px rgba(0, 0, 0, 0.05)",
 							}}
 						>
-							React (Frontend)
+							React Native
 						</span>
 						<span
 							style={{
@@ -1000,7 +1007,7 @@ const CaseStudy4 = () => {
 								boxShadow: "0 2px 8px rgba(0, 0, 0, 0.05)",
 							}}
 						>
-							Node.js (Backend + API integration)
+							Xcode
 						</span>
 						<span
 							style={{
@@ -1012,7 +1019,7 @@ const CaseStudy4 = () => {
 								boxShadow: "0 2px 8px rgba(0, 0, 0, 0.05)",
 							}}
 						>
-							Splunk (Data analysis dashboard)
+							Splunk
 						</span>
 						<span
 							style={{
@@ -1024,7 +1031,7 @@ const CaseStudy4 = () => {
 								boxShadow: "0 2px 8px rgba(0, 0, 0, 0.05)",
 							}}
 						>
-							Figma (UI/UX prototyping)
+							Figma
 						</span>
 						<span
 							style={{
@@ -1036,13 +1043,25 @@ const CaseStudy4 = () => {
 								boxShadow: "0 2px 8px rgba(0, 0, 0, 0.05)",
 							}}
 						>
-							HealthKit + IoT APIs (Biometric data input)
+							Apple HealthKit
+						</span>
+						<span
+							style={{
+								padding: "8px 16px",
+								backgroundColor: "#faf9f6",
+								borderRadius: "100px",
+								fontSize: "0.9rem",
+								color: "#555",
+								boxShadow: "0 2px 8px rgba(0, 0, 0, 0.05)",
+							}}
+						>
+							Python
 						</span>
 					</div>
 				</motion.div>
 
 				{/* Call to Action */}
-				<motion.div
+				{/* <motion.div
 					initial={{opacity: 0, y: 30}}
 					whileInView={{opacity: 1, y: 0}}
 					viewport={{once: true}}
@@ -1129,7 +1148,7 @@ const CaseStudy4 = () => {
 							/>
 						</svg>
 					</Link>
-				</motion.div>
+				</motion.div> */}
 
 				{/* Footer Navigation */}
 				<div
@@ -1154,6 +1173,7 @@ const CaseStudy4 = () => {
 							boxShadow: "0 4px 12px rgba(0, 0, 0, 0.05)",
 							transition: "transform 0.3s, box-shadow 0.3s",
 						}}
+						onClick={() => window.scrollTo(0, 0)}
 						onMouseOver={(e) => {
 							e.currentTarget.style.transform = "scale(1.05)";
 							e.currentTarget.style.boxShadow =
