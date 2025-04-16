@@ -10,7 +10,7 @@ const Footer = () => {
 	};
 
 	return (
-		<footer className="footer-container">
+		<footer className="footer-container" id="contact">
 			<div className="footer-content">
 				<div className="footer-copyright">
 					© {new Date().getFullYear()}
@@ -58,7 +58,6 @@ const Footer = () => {
 				</div>
 
 				<div className="credits">
-
 					<p>
 						Designed & Developed by{" "}
 						<span className="credit-name">Ethan Wang</span>

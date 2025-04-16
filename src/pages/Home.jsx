@@ -23,22 +23,40 @@ const Home = () => {
 		{
 			icon: <IconHome size={24} color="#fff" />,
 			label: "Home",
-			onClick: () => console.log("Home clicked"),
-		},
-		{
-			icon: <IconUser size={24} color="#fff" />,
-			label: "About",
-			onClick: () => console.log("About clicked"),
+			onClick: () => {
+				// Scroll to the top or a specific 'home' section
+				window.scrollTo({top: 0, behavior: "smooth"});
+				// If you have a specific <section id="home">, use this instead:
+				// document.getElementById('home')?.scrollIntoView({ behavior: 'smooth' });
+			},
 		},
 		{
 			icon: <IconFolder size={24} color="#fff" />,
 			label: "Projects",
-			onClick: () => console.log("Projects clicked"),
+			onClick: () => {
+				document
+					.getElementById("projects")
+					?.scrollIntoView({behavior: "smooth"});
+			},
 		},
+		{
+			icon: <IconUser size={24} color="#fff" />,
+			label: "About",
+			onClick: () => {
+				document
+					.getElementById("about")
+					?.scrollIntoView({behavior: "smooth"});
+			},
+		},
+
 		{
 			icon: <IconMail size={24} color="#fff" />,
 			label: "Contact",
-			onClick: () => console.log("Contact clicked"),
+			onClick: () => {
+				document
+					.getElementById("contact")
+					?.scrollIntoView({behavior: "smooth"});
+			},
 		},
 	];
 
@@ -139,7 +157,7 @@ const Home = () => {
 				</motion.div>
 			</div>
 
-			<motion.div className="project-cards-container">
+			<motion.div className="project-cards-container" id="projects">
 				<motion.div
 					initial={{opacity: 0, x: -100}}
 					whileInView={{opacity: 1, x: 0}}
@@ -239,7 +257,7 @@ const Home = () => {
 			</motion.div>
 
 			{/* About Me section - Replace with About component */}
-			<motion.div className="about-me-section">
+			<motion.div className="about-me-section" id="about">
 				<motion.div
 					initial={{opacity: 0, y: 50}}
 					whileInView={{opacity: 1, y: 0}}
