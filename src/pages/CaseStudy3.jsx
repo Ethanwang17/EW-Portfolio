@@ -207,19 +207,17 @@ const CaseStudy3 = () => {
 					animate={{opacity: 1, x: 0}}
 					transition={{duration: 0.7, delay: 0.2}}
 					style={{
-						borderRadius: "20px",
 						overflow: "hidden",
 						height: "500px",
-						boxShadow: "0 10px 40px rgba(0, 0, 0, 0.08)",
 					}}
 				>
 					<img
-						src="/images/xscape-hero-placeholder.jpg"
+						src="/images/X-Scape Hero Mockup.png"
 						alt="X-Scape Hero"
 						style={{
 							width: "100%",
 							height: "100%",
-							objectFit: "cover",
+							objectFit: "contain",
 						}}
 					/>
 				</motion.div>
@@ -497,26 +495,7 @@ const CaseStudy3 = () => {
 						</ul>
 					</div>
 
-					<motion.div
-						whileHover={{scale: 1.03}}
-						transition={{duration: 0.3}}
-						style={{
-							borderRadius: "20px",
-							overflow: "hidden",
-							height: "350px",
-							boxShadow: "0 4px 20px rgba(0, 0, 0, 0.05)",
-						}}
-					>
-						<img
-							src="/images/placeholder-image.jpg"
-							alt="📊 Challenge visualization: A graph showing rising transportation-related GHG emissions (EPA data)"
-							style={{
-								width: "100%",
-								height: "100%",
-								objectFit: "cover",
-							}}
-						/>
-					</motion.div>
+
 				</motion.div>
 
 				{/* Research Section */}
@@ -577,9 +556,6 @@ const CaseStudy3 = () => {
 
 					<div
 						style={{
-							display: "grid",
-							gridTemplateColumns: "repeat(2, 1fr)",
-							gap: "20px",
 							marginBottom: "30px",
 						}}
 					>
@@ -587,44 +563,27 @@ const CaseStudy3 = () => {
 							whileHover={{scale: 1.03}}
 							transition={{duration: 0.3}}
 							style={{
+								display: "flex",
+								justifyContent: "center",
+								alignItems: "center",
 								borderRadius: "20px",
 								overflow: "hidden",
-								height: "250px",
-								boxShadow: "0 4px 20px rgba(0, 0, 0, 0.05)",
+								height: "auto",
+								// boxShadow: "0 6px 25px rgba(0, 0, 0, 0.06)",
 							}}
 						>
 							<img
-								src="/images/placeholder-image.jpg"
-								alt="🧠 Research image 1: User journey map showing pain points in travel planning"
+								src="/images/X-Scape Research.png"
+								alt="X-Scape Research slide showing green house gas emissions from transportation"
 								style={{
-									width: "100%",
-									height: "100%",
-									objectFit: "cover",
-								}}
-							/>
-						</motion.div>
-
-						<motion.div
-							whileHover={{scale: 1.03}}
-							transition={{duration: 0.3}}
-							style={{
-								borderRadius: "20px",
-								overflow: "hidden",
-								height: "250px",
-								boxShadow: "0 4px 20px rgba(0, 0, 0, 0.05)",
-							}}
-						>
-							<img
-								src="/images/placeholder-image.jpg"
-								alt="📈 Research image 2: Comparative chart of emission data per travel method"
-								style={{
-									width: "100%",
-									height: "100%",
+									width: "75%",
+									height: "75%",
 									objectFit: "cover",
 								}}
 							/>
 						</motion.div>
 					</div>
+
 
 					<div
 						style={{
@@ -862,18 +821,21 @@ const CaseStudy3 = () => {
 						transition={{duration: 0.3}}
 						style={{
 							borderRadius: "20px",
-							overflow: "hidden",
-							height: "500px",
-							boxShadow: "0 10px 40px rgba(0, 0, 0, 0.08)",
+							overflow: "visible",
+							height: "auto",
+							maxWidth: "100%",
+							marginBottom: "40px",
+							// boxShadow: "0 10px 40px rgba(0, 0, 0, 0.08)",
 						}}
 					>
 						<img
-							src="/images/placeholder-image.jpg"
+							src="/images/X-Scape Web Layout.png"
 							alt="🌍 Solution showcase: Screenshot of X-Scape app showing travel route and emission comparison"
 							style={{
 								width: "100%",
-								height: "100%",
-								objectFit: "cover",
+								height: "auto",
+								objectFit: "contain",
+								// borderRadius: "20px",
 							}}
 						/>
 					</motion.div>

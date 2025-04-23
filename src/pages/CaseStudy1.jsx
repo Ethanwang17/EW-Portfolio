@@ -213,11 +213,11 @@ const CaseStudy1 = () => {
 						borderRadius: "20px",
 						overflow: "hidden",
 						height: "500px",
-						boxShadow: "0 10px 40px rgba(0, 0, 0, 0.08)",
+						// boxShadow: "0 10px 40px rgba(0, 0, 0, 0.08)",
 					}}
 				>
 					<img
-						src="/images/placeholder-hero.jpg"
+						src="/images/Ticket Genie Hero Mockup.png"
 						alt="Project Hero"
 						style={{
 							width: "100%",
@@ -314,7 +314,7 @@ const CaseStudy1 = () => {
 										color: "#222",
 									}}
 								>
-									10,000+
+									1,000+
 								</h3>
 								<p
 									style={{
@@ -507,27 +507,6 @@ const CaseStudy1 = () => {
 							</li>
 						</ul>
 					</div>
-
-					<motion.div
-						whileHover={{scale: 1.03}}
-						transition={{duration: 0.3}}
-						style={{
-							borderRadius: "20px",
-							overflow: "hidden",
-							height: "350px",
-							boxShadow: "0 4px 20px rgba(0, 0, 0, 0.05)",
-						}}
-					>
-						<img
-							src="/images/placeholder-image.jpg"
-							alt="📉 Challenge visualization: Flowchart of the time-consuming manual process vs. automated Ticket Genie system"
-							style={{
-								width: "100%",
-								height: "100%",
-								objectFit: "cover",
-							}}
-						/>
-					</motion.div>
 				</motion.div>
 
 				{/* Research Section */}
@@ -587,57 +566,6 @@ const CaseStudy1 = () => {
 						command interaction design, and database schema
 						efficiency.
 					</p>
-
-					<div
-						style={{
-							display: "grid",
-							gridTemplateColumns: "repeat(2, 1fr)",
-							gap: "20px",
-							marginBottom: "30px",
-						}}
-					>
-						<motion.div
-							whileHover={{scale: 1.03}}
-							transition={{duration: 0.3}}
-							style={{
-								borderRadius: "20px",
-								overflow: "hidden",
-								height: "250px",
-								boxShadow: "0 4px 20px rgba(0, 0, 0, 0.05)",
-							}}
-						>
-							<img
-								src="/images/placeholder-image.jpg"
-								alt="🧠 Research image 1: Architecture diagram of bots, Discord, and database"
-								style={{
-									width: "100%",
-									height: "100%",
-									objectFit: "cover",
-								}}
-							/>
-						</motion.div>
-
-						<motion.div
-							whileHover={{scale: 1.03}}
-							transition={{duration: 0.3}}
-							style={{
-								borderRadius: "20px",
-								overflow: "hidden",
-								height: "250px",
-								boxShadow: "0 4px 20px rgba(0, 0, 0, 0.05)",
-							}}
-						>
-							<img
-								src="/images/placeholder-image.jpg"
-								alt="📊 Research image 2: Database table relationships between shows, users, and blacklists"
-								style={{
-									width: "100%",
-									height: "100%",
-									objectFit: "cover",
-								}}
-							/>
-						</motion.div>
-					</div>
 
 					<div
 						style={{
@@ -853,16 +781,16 @@ const CaseStudy1 = () => {
 							borderRadius: "20px",
 							overflow: "hidden",
 							height: "500px",
-							boxShadow: "0 10px 40px rgba(0, 0, 0, 0.08)",
+							// boxShadow: "0 10px 40px rgba(0, 0, 0, 0.08)",
 						}}
 					>
 						<img
-							src="/images/placeholder-image.jpg"
+							src="/images/Ticket Genie Solution Image.png"
 							alt="📱 Solution showcase: Screenshot of Discord alerts with interactive buttons and slash commands"
 							style={{
 								width: "100%",
 								height: "100%",
-								objectFit: "cover",
+								objectFit: "contain",
 							}}
 						/>
 					</motion.div>
@@ -1074,96 +1002,6 @@ const CaseStudy1 = () => {
 							handling)
 						</span>
 					</div>
-				</motion.div>
-
-				{/* Call to Action */}
-				<motion.div
-					initial={{opacity: 0, y: 30}}
-					whileInView={{opacity: 1, y: 0}}
-					viewport={{once: true}}
-					transition={{duration: 0.6}}
-					style={{
-						padding: "60px",
-						borderRadius: "20px",
-						backgroundColor: "#fff",
-						boxShadow: "0 4px 20px rgba(0, 0, 0, 0.05)",
-						textAlign: "center",
-						marginBottom: "60px",
-					}}
-				>
-					<h2
-						style={{
-							fontSize: "2rem",
-							fontWeight: 700,
-							marginBottom: "20px",
-							color: "#222",
-						}}
-					>
-						Let's Work Together
-					</h2>
-					<p
-						style={{
-							fontSize: "1.1rem",
-							lineHeight: 1.6,
-							color: "#555",
-							marginBottom: "30px",
-							maxWidth: "600px",
-							margin: "0 auto 30px",
-						}}
-					>
-						Interested in collaborating on a similar project? I'd
-						love to hear from you!
-					</p>
-					<Link
-						to="/contact"
-						style={{
-							display: "inline-flex",
-							alignItems: "center",
-							gap: "10px",
-							textDecoration: "none",
-							color: "#222",
-							fontWeight: 600,
-							padding: "14px 30px",
-							backgroundColor: "#faf9f6",
-							borderRadius: "100px",
-							boxShadow: "0 4px 12px rgba(0, 0, 0, 0.05)",
-							transition: "transform 0.3s, box-shadow 0.3s",
-						}}
-						onMouseOver={(e) => {
-							e.currentTarget.style.transform = "scale(1.05)";
-							e.currentTarget.style.boxShadow =
-								"0 6px 16px rgba(0, 0, 0, 0.08)";
-						}}
-						onMouseOut={(e) => {
-							e.currentTarget.style.transform = "scale(1)";
-							e.currentTarget.style.boxShadow =
-								"0 4px 12px rgba(0, 0, 0, 0.05)";
-						}}
-					>
-						Get in Touch
-						<svg
-							width="18"
-							height="18"
-							viewBox="0 0 24 24"
-							fill="none"
-							xmlns="http://www.w3.org/2000/svg"
-						>
-							<path
-								d="M5 12H19"
-								stroke="currentColor"
-								strokeWidth="2"
-								strokeLinecap="round"
-								strokeLinejoin="round"
-							/>
-							<path
-								d="M12 5L19 12L12 19"
-								stroke="currentColor"
-								strokeWidth="2"
-								strokeLinecap="round"
-								strokeLinejoin="round"
-							/>
-						</svg>
-					</Link>
 				</motion.div>
 
 				{/* Footer Navigation */}
