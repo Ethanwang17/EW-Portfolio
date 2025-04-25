@@ -226,44 +226,6 @@
 	}
 }
 
-/* Tilted Cards Container */
-.tilted-cards-container {
-	position: relative;
-	padding: 8rem 4rem;
-	width: 100%;
-	background-color: #faf9f6;
-	z-index: 2;
-}
-
-.tilted-cards-container h2 {
-	font-size: clamp(2rem, 4vw, 4rem);
-	margin-bottom: 2rem;
-	font-weight: 600;
-	max-width: 80%;
-	margin: 0 auto 2rem auto;
-}
-
-.tilted-cards-grid {
-	display: flex;
-	flex-direction: column;
-	gap: 2rem;
-	max-width: 80%; /* Increased from 400px for wider cards */
-	margin: 0 auto;
-}
-
-@media (max-width: 1024px) {
-	.tilted-cards-grid {
-		gap: 1.5rem;
-		max-width: 90%; /* Make it responsive on smaller screens */
-	}
-}
-
-@media (max-width: 768px) {
-	.tilted-cards-container {
-		padding: 4rem 2rem;
-	}
-}
-
 /* Add these styles */
 .marquee-container {
 	font-size: clamp(1rem, 2vw, 1.5rem); /* Increased font size */
@@ -511,6 +473,25 @@
 }
 
 @theme inline {
+  @keyframes shimmer-slide {
+  to {
+    transform: translate(calc(100cqw - 100%), 0);
+		}
+	}
+  @keyframes spin-around {
+  0% {
+    transform: translateZ(0) rotate(0);
+		}
+  15%, 35% {
+    transform: translateZ(0) rotate(90deg);
+		}
+  65%, 85% {
+    transform: translateZ(0) rotate(270deg);
+		}
+  100% {
+    transform: translateZ(0) rotate(360deg);
+		}
+	}
   @keyframes shimmer-slide {
   to {
     transform: translate(calc(100cqw - 100%), 0);

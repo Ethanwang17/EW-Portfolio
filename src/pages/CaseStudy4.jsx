@@ -102,7 +102,7 @@ const CaseStudy4 = () => {
 							Mindscape Project
 						</span>
 						<span style={{color: "#777"}}>•</span>
-						<span style={{color: "#777"}}>2024</span>
+						<span style={{color: "#777"}}>Capstone Project</span>
 					</div>
 				</div>
 			</motion.nav>
@@ -216,7 +216,7 @@ const CaseStudy4 = () => {
 				>
 					<img
 						src="/images/Mindscape Hero Mockup.png"
-						alt="Project Hero"
+						alt="Mindscape health monitoring dashboard showing biometric data visualization"
 						style={{
 							// width: "100%",
 							height: "100%",
@@ -519,7 +519,7 @@ const CaseStudy4 = () => {
 					>
 						<img
 							src="/images/Mindscape Challenge Timeline.png"
-							alt="📉 Challenge visualization: Problem timeline showing delay from symptom onset to traditional reporting vs. biometric detection"
+							alt="Challenge visualization: Problem timeline showing delay from symptom onset to traditional reporting vs. biometric detection"
 							style={{
 								width: "100%",
 								height: "100%",
@@ -606,7 +606,7 @@ const CaseStudy4 = () => {
 						>
 							<img
 								src="/images/Mindscape Research Dashboard.png"
-								alt="📊 Splunk Dashboard showing Heart Rate Outliers, Steps Taken by Time, and another metric with outliers"
+								alt="Splunk Dashboard showing Heart Rate Outliers, Steps Taken by Time, and another metric with outliers"
 								style={{
 									width: "75%",
 									height: "75%",
@@ -854,7 +854,7 @@ const CaseStudy4 = () => {
 					>
 						<img
 							src="/images/Mindscape iPhone Layout.png"
-							alt="📱 Solution showcase: MindScape mobile view with Splunk-powered charts and outlier detection"
+							alt="Solution showcase: MindScape mobile view with Splunk-powered charts and outlier detection"
 							style={{
 								width: "100%",
 								height: "100%",
@@ -1059,96 +1059,6 @@ const CaseStudy4 = () => {
 						</span>
 					</div>
 				</motion.div>
-
-				{/* Call to Action */}
-				{/* <motion.div
-					initial={{opacity: 0, y: 30}}
-					whileInView={{opacity: 1, y: 0}}
-					viewport={{once: true}}
-					transition={{duration: 0.6}}
-					style={{
-						padding: "60px",
-						borderRadius: "20px",
-						backgroundColor: "#fff",
-						boxShadow: "0 4px 20px rgba(0, 0, 0, 0.05)",
-						textAlign: "center",
-						marginBottom: "60px",
-					}}
-				>
-					<h2
-						style={{
-							fontSize: "2rem",
-							fontWeight: 700,
-							marginBottom: "20px",
-							color: "#222",
-						}}
-					>
-						Let's Work Together
-					</h2>
-					<p
-						style={{
-							fontSize: "1.1rem",
-							lineHeight: 1.6,
-							color: "#555",
-							marginBottom: "30px",
-							maxWidth: "600px",
-							margin: "0 auto 30px",
-						}}
-					>
-						Interested in collaborating on a similar project? I'd
-						love to hear from you!
-					</p>
-					<Link
-						to="/contact"
-						style={{
-							display: "inline-flex",
-							alignItems: "center",
-							gap: "10px",
-							textDecoration: "none",
-							color: "#222",
-							fontWeight: 600,
-							padding: "14px 30px",
-							backgroundColor: "#faf9f6",
-							borderRadius: "100px",
-							boxShadow: "0 4px 12px rgba(0, 0, 0, 0.05)",
-							transition: "transform 0.3s, box-shadow 0.3s",
-						}}
-						onMouseOver={(e) => {
-							e.currentTarget.style.transform = "scale(1.05)";
-							e.currentTarget.style.boxShadow =
-								"0 6px 16px rgba(0, 0, 0, 0.08)";
-						}}
-						onMouseOut={(e) => {
-							e.currentTarget.style.transform = "scale(1)";
-							e.currentTarget.style.boxShadow =
-								"0 4px 12px rgba(0, 0, 0, 0.05)";
-						}}
-					>
-						Get in Touch
-						<svg
-							width="18"
-							height="18"
-							viewBox="0 0 24 24"
-							fill="none"
-							xmlns="http://www.w3.org/2000/svg"
-						>
-							<path
-								d="M5 12H19"
-								stroke="currentColor"
-								strokeWidth="2"
-								strokeLinecap="round"
-								strokeLinejoin="round"
-							/>
-							<path
-								d="M12 5L19 12L12 19"
-								stroke="currentColor"
-								strokeWidth="2"
-								strokeLinecap="round"
-								strokeLinejoin="round"
-							/>
-						</svg>
-					</Link>
-				</motion.div> */}
 
 				{/* Footer Navigation */}
 				<div

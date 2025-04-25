@@ -4,7 +4,6 @@ import Dock from "../components/Dock/Dock";
 import Lanyard from "../components/Lanyard/Lanyard";
 import ProjectCard from "../components/ProjectCard/ProjectCard";
 import {Marquee} from "@/components/magicui/marquee";
-import SplitText from "../TextAnimations/SplitText/SplitText";
 import {motion} from "framer-motion";
 import About from "../components/About/About";
 import Footer from "../components/Footer";
@@ -199,7 +198,7 @@ const Home = () => {
 					/>
 
 					<ProjectCard
-						title="HR Dashboard"
+						title="HR Management"
 						company="TSMC"
 						year="2020"
 						description="Redesigning job recommendations based on job seeker activity."

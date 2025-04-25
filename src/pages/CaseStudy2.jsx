@@ -79,7 +79,7 @@ const CaseStudy2 = () => {
 						}}
 					>
 						<img
-							src="/images/tsmc-icon-placeholder.png"
+							src="/images/TSMC Icon.png"
 							alt="Company Icon"
 							style={{
 								width: "100%",
@@ -99,10 +99,10 @@ const CaseStudy2 = () => {
 						}}
 					>
 						<span style={{fontWeight: 600, color: "#555"}}>
-							TSMC HR Web App
+							TSMC
 						</span>
 						<span style={{color: "#777"}}>•</span>
-						<span style={{color: "#777"}}>Internship</span>
+						<span style={{color: "#777"}}>Software Engineer Internship</span>
 					</div>
 				</div>
 			</motion.nav>
@@ -206,19 +206,17 @@ const CaseStudy2 = () => {
 					animate={{opacity: 1, x: 0}}
 					transition={{duration: 0.7, delay: 0.2}}
 					style={{
-						borderRadius: "20px",
 						overflow: "hidden",
 						height: "500px",
-						boxShadow: "0 10px 40px rgba(0, 0, 0, 0.08)",
 					}}
 				>
 					<img
-						src="/images/tsmc-hero-placeholder.jpg"
-						alt="TSMC HR Web App Hero"
+						src="/images/TSMC Hero Mockup.png"
+						alt="TSMC HR Dashboard Hero"
 						style={{
 							width: "100%",
 							height: "100%",
-							objectFit: "cover",
+							objectFit: "contain",
 						}}
 					/>
 				</motion.div>
@@ -524,27 +522,6 @@ const CaseStudy2 = () => {
 							</li>
 						</ul>
 					</div>
-
-					<motion.div
-						whileHover={{scale: 1.03}}
-						transition={{duration: 0.3}}
-						style={{
-							borderRadius: "20px",
-							overflow: "hidden",
-							height: "350px",
-							boxShadow: "0 4px 20px rgba(0, 0, 0, 0.05)",
-						}}
-					>
-						<img
-							src="/images/placeholder-image.jpg"
-							alt="Challenge visualization"
-							style={{
-								width: "100%",
-								height: "100%",
-								objectFit: "cover",
-							}}
-						/>
-					</motion.div>
 				</motion.div>
 
 				{/* Research Section */}
@@ -616,49 +593,7 @@ const CaseStudy2 = () => {
 							gap: "20px",
 							marginBottom: "30px",
 						}}
-					>
-						<motion.div
-							whileHover={{scale: 1.03}}
-							transition={{duration: 0.3}}
-							style={{
-								borderRadius: "20px",
-								overflow: "hidden",
-								height: "250px",
-								boxShadow: "0 4px 20px rgba(0, 0, 0, 0.05)",
-							}}
-						>
-							<img
-								src="/images/placeholder-image.jpg"
-								alt="User Research Visualization"
-								style={{
-									width: "100%",
-									height: "100%",
-									objectFit: "cover",
-								}}
-							/>
-						</motion.div>
-
-						<motion.div
-							whileHover={{scale: 1.03}}
-							transition={{duration: 0.3}}
-							style={{
-								borderRadius: "20px",
-								overflow: "hidden",
-								height: "250px",
-								boxShadow: "0 4px 20px rgba(0, 0, 0, 0.05)",
-							}}
-						>
-							<img
-								src="/images/placeholder-image.jpg"
-								alt="User Persona or Flow Diagram"
-								style={{
-									width: "100%",
-									height: "100%",
-									objectFit: "cover",
-								}}
-							/>
-						</motion.div>
-					</div>
+					></div>
 
 					<div
 						style={{
@@ -904,18 +839,19 @@ const CaseStudy2 = () => {
 						transition={{duration: 0.3}}
 						style={{
 							borderRadius: "20px",
-							overflow: "hidden",
-							height: "500px",
-							boxShadow: "0 10px 40px rgba(0, 0, 0, 0.08)",
+							overflow: "visible",
+							height: "auto",
+							maxWidth: "100%",
+							marginBottom: "40px",
 						}}
 					>
 						<img
-							src="/images/placeholder-image.jpg"
-							alt="Solution Mockup Showcase"
+							src="/images/TSMC Web Layout.png"
+							alt="🌍 Solution showcase: Screenshot of X-Scape app showing travel route and emission comparison"
 							style={{
 								width: "100%",
-								height: "100%",
-								objectFit: "cover",
+								height: "auto",
+								objectFit: "contain",
 							}}
 						/>
 					</motion.div>
@@ -1144,7 +1080,7 @@ const CaseStudy2 = () => {
 				</motion.div>
 
 				{/* Call to Action */}
-				<motion.div
+				{/* <motion.div
 					initial={{opacity: 0, y: 30}}
 					whileInView={{opacity: 1, y: 0}}
 					viewport={{once: true}}
@@ -1231,7 +1167,7 @@ const CaseStudy2 = () => {
 							/>
 						</svg>
 					</Link>
-				</motion.div>
+				</motion.div> */}
 
 				{/* Footer Navigation */}
 				<div

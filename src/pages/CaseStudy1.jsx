@@ -79,8 +79,8 @@ const CaseStudy1 = () => {
 						}}
 					>
 						<img
-							src="/images/placeholder-icon.png"
-							alt="Company Icon"
+							src="/images/Ticket Genie Icon.png"
+							alt="Ticket Genie Icon"
 							style={{
 								width: "100%",
 								height: "100%",
@@ -99,10 +99,10 @@ const CaseStudy1 = () => {
 						}}
 					>
 						<span style={{fontWeight: 600, color: "#555"}}>
-							Mindscape Project
+							Ticket Genie
 						</span>
 						<span style={{color: "#777"}}>•</span>
-						<span style={{color: "#777"}}>2024</span>
+						<span style={{color: "#777"}}>Software Engineer</span>
 					</div>
 				</div>
 			</motion.nav>
@@ -133,8 +133,7 @@ const CaseStudy1 = () => {
 							marginBottom: "30px",
 						}}
 					>
-						Ticket Genie: Real-Time Show Alerts through Web Scraping
-						& Discord Automation
+						Ticket Genie: Real-Time Show Alerts
 					</h1>
 
 					<p
@@ -218,7 +217,7 @@ const CaseStudy1 = () => {
 				>
 					<img
 						src="/images/Ticket Genie Hero Mockup.png"
-						alt="Project Hero"
+						alt="Ticket Genie Discord bot interface showing alert notifications"
 						style={{
 							width: "100%",
 							height: "100%",
@@ -786,7 +785,7 @@ const CaseStudy1 = () => {
 					>
 						<img
 							src="/images/Ticket Genie Solution Image.png"
-							alt="📱 Solution showcase: Screenshot of Discord alerts with interactive buttons and slash commands"
+							alt="Solution showcase: Screenshot of Discord alerts with interactive buttons and slash commands"
 							style={{
 								width: "100%",
 								height: "100%",
