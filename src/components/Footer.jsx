@@ -1,7 +1,6 @@
 import React from "react";
 import {ArrowUp} from "lucide-react";
-import { InteractiveHoverButton } from "@/components/magicui/interactive-hover-button";
-
+import {InteractiveHoverButton} from "@/components/magicui/interactive-hover-button";
 
 const Footer = () => {
 	const scrollToTop = () => {
@@ -34,31 +33,28 @@ const Footer = () => {
 			<div className="footer-links">
 				<div className="social-links">
 					<a
-						href="https://github.com"
+						href="https://github.com/Ethanwang17"
 						target="_blank"
 						rel="noopener noreferrer"
-						className="social-link"
 					>
-						GITHUB
+						<InteractiveHoverButton>Github</InteractiveHoverButton>
 					</a>
 					<a
-						href="https://linkedin.com"
+						href="www.linkedin.com/in/ethanwang17"
 						target="_blank"
 						rel="noopener noreferrer"
-						className="social-link"
 					>
-						LINKEDIN
+						<InteractiveHoverButton>
+							Linkedin
+						</InteractiveHoverButton>
 					</a>
 					<a
 						href="https://twitter.com"
 						target="_blank"
 						rel="noopener noreferrer"
-						className="social-link"
 					>
-						RESUME
+						<InteractiveHoverButton>Resume</InteractiveHoverButton>
 					</a>
-					<InteractiveHoverButton>Resume</InteractiveHoverButton>
-
 				</div>
 
 				<div className="credits">
