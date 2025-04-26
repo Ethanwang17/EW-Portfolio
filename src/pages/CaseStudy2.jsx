@@ -18,11 +18,13 @@ const CaseStudy2 = () => {
 				animate={{opacity: 1}}
 				transition={{duration: 0.4}}
 				style={{
-					padding: "24px 40px",
+					padding: "24px max(5%, 20px)",
 					display: "flex",
 					justifyContent: "space-between",
 					alignItems: "center",
 					borderBottom: "1px solid rgba(0, 0, 0, 0.05)",
+					flexWrap: "wrap",
+					gap: "15px",
 				}}
 			>
 				<Link
@@ -114,10 +116,10 @@ const CaseStudy2 = () => {
 				style={{
 					maxWidth: "1400px",
 					margin: "0 auto",
-					padding: "80px 40px",
+					padding: "60px max(5%, 20px)",
 					display: "grid",
-					gridTemplateColumns: "1fr 1fr",
-					gap: "60px",
+					gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))",
+					gap: "40px",
 					alignItems: "center",
 				}}
 			>
@@ -129,7 +131,7 @@ const CaseStudy2 = () => {
 				>
 					<h1
 						style={{
-							fontSize: "clamp(2.5rem, 5vw, 3.8rem)",
+							fontSize: "clamp(2rem, 5vw, 3.8rem)",
 							fontWeight: 700,
 							lineHeight: 1.1,
 							marginBottom: "30px",
@@ -140,7 +142,7 @@ const CaseStudy2 = () => {
 
 					<p
 						style={{
-							fontSize: "1.1rem",
+							fontSize: "clamp(1rem, 3vw, 1.1rem)",
 							lineHeight: 1.6,
 							color: "#555",
 							marginBottom: "40px",
@@ -209,7 +211,8 @@ const CaseStudy2 = () => {
 					transition={{duration: 0.7, delay: 0.2}}
 					style={{
 						overflow: "hidden",
-						height: "500px",
+						height: "auto",
+						maxWidth: "100%",
 					}}
 				>
 					<img
@@ -217,7 +220,7 @@ const CaseStudy2 = () => {
 						alt="TSMC HR Dashboard Hero"
 						style={{
 							width: "100%",
-							height: "100%",
+							height: "auto",
 							objectFit: "contain",
 						}}
 					/>
@@ -228,14 +231,14 @@ const CaseStudy2 = () => {
 			<section
 				style={{
 					backgroundColor: "#fff",
-					padding: "80px 0",
+					padding: "60px 0",
 				}}
 			>
 				<div
 					style={{
 						maxWidth: "1200px",
 						margin: "0 auto",
-						padding: "0 40px",
+						padding: "0 max(5%, 20px)",
 					}}
 				>
 					<motion.div
@@ -246,7 +249,7 @@ const CaseStudy2 = () => {
 					>
 						<h2
 							style={{
-								fontSize: "2.2rem",
+								fontSize: "clamp(1.8rem, 4vw, 2.2rem)",
 								fontWeight: 700,
 								marginBottom: "50px",
 								textAlign: "center",
@@ -258,12 +261,14 @@ const CaseStudy2 = () => {
 						<div
 							style={{
 								display: "grid",
-								gridTemplateColumns: "repeat(3, 1fr)",
-								gap: "30px",
+								gridTemplateColumns:
+									"repeat(auto-fit, minmax(250px, 1fr))",
+								gap: "20px",
 								marginBottom: "60px",
 							}}
 						>
 							<div
+								className="stats-card"
 								style={{
 									textAlign: "center",
 									padding: "30px",
@@ -274,7 +279,7 @@ const CaseStudy2 = () => {
 							>
 								<h3
 									style={{
-										fontSize: "2.8rem",
+										fontSize: "clamp(2rem, 6vw, 2.8rem)",
 										fontWeight: 700,
 										marginBottom: "10px",
 										color: "#222",
@@ -302,7 +307,7 @@ const CaseStudy2 = () => {
 							>
 								<h3
 									style={{
-										fontSize: "2.8rem",
+										fontSize: "clamp(2rem, 6vw, 2.8rem)",
 										fontWeight: 700,
 										marginBottom: "10px",
 										color: "#222",
@@ -330,7 +335,7 @@ const CaseStudy2 = () => {
 							>
 								<h3
 									style={{
-										fontSize: "2.8rem",
+										fontSize: "clamp(2rem, 6vw, 2.8rem)",
 										fontWeight: 700,
 										marginBottom: "10px",
 										color: "#222",
@@ -351,7 +356,7 @@ const CaseStudy2 = () => {
 
 						<p
 							style={{
-								fontSize: "1.1rem",
+								fontSize: "clamp(1rem, 3vw, 1.1rem)",
 								lineHeight: 1.7,
 								color: "#555",
 								maxWidth: "800px",
@@ -383,7 +388,7 @@ const CaseStudy2 = () => {
 				style={{
 					maxWidth: "1000px",
 					margin: "0 auto",
-					padding: "80px 40px",
+					padding: "60px max(5%, 20px)",
 				}}
 			>
 				{/* Challenge Section */}
@@ -393,24 +398,25 @@ const CaseStudy2 = () => {
 					viewport={{once: true}}
 					transition={{duration: 0.6}}
 					style={{
-						marginBottom: "100px",
+						marginBottom: "80px",
 						position: "relative",
+						paddingLeft: "min(60px, 15vw)",
 					}}
 				>
 					<div
 						style={{
 							position: "absolute",
-							left: "-60px",
-							top: "0",
-							width: "40px",
-							height: "40px",
+							left: "0",
+							top: "5px",
+							width: "min(40px, 10vw)",
+							height: "min(40px, 10vw)",
 							borderRadius: "50%",
 							backgroundColor: "#fff",
 							display: "flex",
 							alignItems: "center",
 							justifyContent: "center",
 							boxShadow: "0 4px 20px rgba(0, 0, 0, 0.08)",
-							fontSize: "1.2rem",
+							fontSize: "min(1.2rem, 4vw)",
 							fontWeight: "700",
 							color: "#222",
 						}}
@@ -419,7 +425,7 @@ const CaseStudy2 = () => {
 					</div>
 					<h2
 						style={{
-							fontSize: "2.2rem",
+							fontSize: "clamp(1.8rem, 4vw, 2.2rem)",
 							fontWeight: 700,
 							marginBottom: "30px",
 							color: "#222",
@@ -430,7 +436,7 @@ const CaseStudy2 = () => {
 
 					<p
 						style={{
-							fontSize: "1.05rem",
+							fontSize: "clamp(0.95rem, 3vw, 1.05rem)",
 							lineHeight: 1.7,
 							color: "#555",
 							marginBottom: "30px",
@@ -449,7 +455,7 @@ const CaseStudy2 = () => {
 					<div
 						style={{
 							backgroundColor: "#fff",
-							padding: "30px",
+							padding: "25px",
 							borderRadius: "20px",
 							boxShadow: "0 4px 20px rgba(0, 0, 0, 0.05)",
 							marginBottom: "30px",
@@ -457,7 +463,7 @@ const CaseStudy2 = () => {
 					>
 						<h3
 							style={{
-								fontSize: "1.3rem",
+								fontSize: "clamp(1.1rem, 3vw, 1.3rem)",
 								fontWeight: 600,
 								marginBottom: "15px",
 								color: "#222",
@@ -472,7 +478,7 @@ const CaseStudy2 = () => {
 						>
 							<li
 								style={{
-									fontSize: "1.05rem",
+									fontSize: "clamp(0.95rem, 3vw, 1.05rem)",
 									lineHeight: 1.6,
 									color: "#555",
 									marginBottom: "10px",
@@ -483,7 +489,7 @@ const CaseStudy2 = () => {
 							</li>
 							<li
 								style={{
-									fontSize: "1.05rem",
+									fontSize: "clamp(0.95rem, 3vw, 1.05rem)",
 									lineHeight: 1.6,
 									color: "#555",
 									marginBottom: "10px",
@@ -494,7 +500,7 @@ const CaseStudy2 = () => {
 							</li>
 							<li
 								style={{
-									fontSize: "1.05rem",
+									fontSize: "clamp(0.95rem, 3vw, 1.05rem)",
 									lineHeight: 1.6,
 									color: "#555",
 									marginBottom: "10px",
@@ -505,7 +511,7 @@ const CaseStudy2 = () => {
 							</li>
 							<li
 								style={{
-									fontSize: "1.05rem",
+									fontSize: "clamp(0.95rem, 3vw, 1.05rem)",
 									lineHeight: 1.6,
 									color: "#555",
 									marginBottom: "10px",
@@ -516,7 +522,7 @@ const CaseStudy2 = () => {
 							</li>
 							<li
 								style={{
-									fontSize: "1.05rem",
+									fontSize: "clamp(0.95rem, 3vw, 1.05rem)",
 									lineHeight: 1.6,
 									color: "#555",
 									marginBottom: "10px",
@@ -536,24 +542,25 @@ const CaseStudy2 = () => {
 					viewport={{once: true}}
 					transition={{duration: 0.6}}
 					style={{
-						marginBottom: "100px",
+						marginBottom: "80px",
 						position: "relative",
+						paddingLeft: "min(60px, 15vw)",
 					}}
 				>
 					<div
 						style={{
 							position: "absolute",
-							left: "-60px",
-							top: "0",
-							width: "40px",
-							height: "40px",
+							left: "0",
+							top: "5px",
+							width: "min(40px, 10vw)",
+							height: "min(40px, 10vw)",
 							borderRadius: "50%",
 							backgroundColor: "#fff",
 							display: "flex",
 							alignItems: "center",
 							justifyContent: "center",
 							boxShadow: "0 4px 20px rgba(0, 0, 0, 0.08)",
-							fontSize: "1.2rem",
+							fontSize: "min(1.2rem, 4vw)",
 							fontWeight: "700",
 							color: "#222",
 						}}
@@ -562,7 +569,7 @@ const CaseStudy2 = () => {
 					</div>
 					<h2
 						style={{
-							fontSize: "2.2rem",
+							fontSize: "clamp(1.8rem, 4vw, 2.2rem)",
 							fontWeight: 700,
 							marginBottom: "30px",
 							color: "#222",
@@ -573,7 +580,7 @@ const CaseStudy2 = () => {
 
 					<p
 						style={{
-							fontSize: "1.05rem",
+							fontSize: "clamp(0.95rem, 3vw, 1.05rem)",
 							lineHeight: 1.7,
 							color: "#555",
 							marginBottom: "30px",
@@ -594,7 +601,8 @@ const CaseStudy2 = () => {
 					<div
 						style={{
 							display: "grid",
-							gridTemplateColumns: "repeat(2, 1fr)",
+							gridTemplateColumns:
+								"repeat(auto-fit, minmax(250px, 1fr))",
 							gap: "20px",
 							marginBottom: "30px",
 						}}
@@ -603,14 +611,14 @@ const CaseStudy2 = () => {
 					<div
 						style={{
 							backgroundColor: "#fff",
-							padding: "30px",
+							padding: "25px",
 							borderRadius: "20px",
 							boxShadow: "0 4px 20px rgba(0, 0, 0, 0.05)",
 						}}
 					>
 						<h3
 							style={{
-								fontSize: "1.3rem",
+								fontSize: "clamp(1.1rem, 3vw, 1.3rem)",
 								fontWeight: 600,
 								marginBottom: "15px",
 								color: "#222",
@@ -621,7 +629,7 @@ const CaseStudy2 = () => {
 						<ul style={{paddingLeft: "20px"}}>
 							<li
 								style={{
-									fontSize: "1.05rem",
+									fontSize: "clamp(0.95rem, 3vw, 1.05rem)",
 									lineHeight: 1.6,
 									color: "#555",
 									marginBottom: "10px",
@@ -632,7 +640,7 @@ const CaseStudy2 = () => {
 							</li>
 							<li
 								style={{
-									fontSize: "1.05rem",
+									fontSize: "clamp(0.95rem, 3vw, 1.05rem)",
 									lineHeight: 1.6,
 									color: "#555",
 									marginBottom: "10px",
@@ -643,7 +651,7 @@ const CaseStudy2 = () => {
 							</li>
 							<li
 								style={{
-									fontSize: "1.05rem",
+									fontSize: "clamp(0.95rem, 3vw, 1.05rem)",
 									lineHeight: 1.6,
 									color: "#555",
 									marginBottom: "10px",
@@ -664,24 +672,25 @@ const CaseStudy2 = () => {
 					viewport={{once: true}}
 					transition={{duration: 0.6}}
 					style={{
-						marginBottom: "100px",
+						marginBottom: "80px",
 						position: "relative",
+						paddingLeft: "min(60px, 15vw)",
 					}}
 				>
 					<div
 						style={{
 							position: "absolute",
-							left: "-60px",
-							top: "0",
-							width: "40px",
-							height: "40px",
+							left: "0",
+							top: "5px",
+							width: "min(40px, 10vw)",
+							height: "min(40px, 10vw)",
 							borderRadius: "50%",
 							backgroundColor: "#fff",
 							display: "flex",
 							alignItems: "center",
 							justifyContent: "center",
 							boxShadow: "0 4px 20px rgba(0, 0, 0, 0.08)",
-							fontSize: "1.2rem",
+							fontSize: "min(1.2rem, 4vw)",
 							fontWeight: "700",
 							color: "#222",
 						}}
@@ -690,7 +699,7 @@ const CaseStudy2 = () => {
 					</div>
 					<h2
 						style={{
-							fontSize: "2.2rem",
+							fontSize: "clamp(1.8rem, 4vw, 2.2rem)",
 							fontWeight: 700,
 							marginBottom: "30px",
 							color: "#222",
@@ -701,7 +710,7 @@ const CaseStudy2 = () => {
 
 					<p
 						style={{
-							fontSize: "1.05rem",
+							fontSize: "clamp(0.95rem, 3vw, 1.05rem)",
 							lineHeight: 1.7,
 							color: "#555",
 							marginBottom: "40px",
@@ -734,13 +743,13 @@ const CaseStudy2 = () => {
 							style={{
 								backgroundColor: "#fff",
 								borderRadius: "20px",
-								padding: "30px",
+								padding: "25px",
 								boxShadow: "0 4px 20px rgba(0, 0, 0, 0.05)",
 							}}
 						>
 							<h3
 								style={{
-									fontSize: "1.4rem",
+									fontSize: "clamp(1.2rem, 3vw, 1.4rem)",
 									fontWeight: 600,
 									marginBottom: "15px",
 									color: "#222",
@@ -750,7 +759,7 @@ const CaseStudy2 = () => {
 							</h3>
 							<p
 								style={{
-									fontSize: "1rem",
+									fontSize: "clamp(0.95rem, 3vw, 1rem)",
 									lineHeight: 1.6,
 									color: "#555",
 								}}
@@ -772,13 +781,13 @@ const CaseStudy2 = () => {
 							style={{
 								backgroundColor: "#fff",
 								borderRadius: "20px",
-								padding: "30px",
+								padding: "25px",
 								boxShadow: "0 4px 20px rgba(0, 0, 0, 0.05)",
 							}}
 						>
 							<h3
 								style={{
-									fontSize: "1.4rem",
+									fontSize: "clamp(1.2rem, 3vw, 1.4rem)",
 									fontWeight: 600,
 									marginBottom: "15px",
 									color: "#222",
@@ -788,7 +797,7 @@ const CaseStudy2 = () => {
 							</h3>
 							<p
 								style={{
-									fontSize: "1rem",
+									fontSize: "clamp(0.95rem, 3vw, 1rem)",
 									lineHeight: 1.6,
 									color: "#555",
 								}}
@@ -809,13 +818,13 @@ const CaseStudy2 = () => {
 							style={{
 								backgroundColor: "#fff",
 								borderRadius: "20px",
-								padding: "30px",
+								padding: "25px",
 								boxShadow: "0 4px 20px rgba(0, 0, 0, 0.05)",
 							}}
 						>
 							<h3
 								style={{
-									fontSize: "1.4rem",
+									fontSize: "clamp(1.2rem, 3vw, 1.4rem)",
 									fontWeight: 600,
 									marginBottom: "15px",
 									color: "#222",
@@ -825,7 +834,7 @@ const CaseStudy2 = () => {
 							</h3>
 							<p
 								style={{
-									fontSize: "1rem",
+									fontSize: "clamp(0.95rem, 3vw, 1rem)",
 									lineHeight: 1.6,
 									color: "#555",
 								}}
@@ -871,22 +880,23 @@ const CaseStudy2 = () => {
 					style={{
 						marginBottom: "80px",
 						position: "relative",
+						paddingLeft: "min(60px, 15vw)",
 					}}
 				>
 					<div
 						style={{
 							position: "absolute",
-							left: "-60px",
-							top: "0",
-							width: "40px",
-							height: "40px",
+							left: "0",
+							top: "5px",
+							width: "min(40px, 10vw)",
+							height: "min(40px, 10vw)",
 							borderRadius: "50%",
 							backgroundColor: "#fff",
 							display: "flex",
 							alignItems: "center",
 							justifyContent: "center",
 							boxShadow: "0 4px 20px rgba(0, 0, 0, 0.08)",
-							fontSize: "1.2rem",
+							fontSize: "min(1.2rem, 4vw)",
 							fontWeight: "700",
 							color: "#222",
 						}}
@@ -895,7 +905,7 @@ const CaseStudy2 = () => {
 					</div>
 					<h2
 						style={{
-							fontSize: "2.2rem",
+							fontSize: "clamp(1.8rem, 4vw, 2.2rem)",
 							fontWeight: 700,
 							marginBottom: "30px",
 							color: "#222",
@@ -906,7 +916,7 @@ const CaseStudy2 = () => {
 
 					<p
 						style={{
-							fontSize: "1.05rem",
+							fontSize: "clamp(0.95rem, 3vw, 1.05rem)",
 							lineHeight: 1.7,
 							color: "#555",
 							marginBottom: "30px",
@@ -922,12 +932,12 @@ const CaseStudy2 = () => {
 
 					<blockquote
 						style={{
-							fontSize: "1.3rem",
+							fontSize: "clamp(1.1rem, 3vw, 1.3rem)",
 							lineHeight: 1.6,
 							color: "#222",
 							fontWeight: 500,
 							fontStyle: "italic",
-							padding: "30px 40px",
+							padding: "30px 25px",
 							backgroundColor: "#fff",
 							borderRadius: "20px",
 							boxShadow: "0 4px 20px rgba(0, 0, 0, 0.05)",
@@ -962,14 +972,14 @@ const CaseStudy2 = () => {
 					style={{
 						backgroundColor: "#fff",
 						borderRadius: "20px",
-						padding: "40px",
+						padding: "30px 25px",
 						marginBottom: "60px",
 						boxShadow: "0 4px 20px rgba(0, 0, 0, 0.05)",
 					}}
 				>
 					<h3
 						style={{
-							fontSize: "1.4rem",
+							fontSize: "clamp(1.2rem, 3vw, 1.4rem)",
 							fontWeight: 600,
 							marginBottom: "20px",
 							color: "#222",
@@ -1078,6 +1088,8 @@ const CaseStudy2 = () => {
 						display: "flex",
 						justifyContent: "space-between",
 						alignItems: "center",
+						flexWrap: "wrap",
+						gap: "15px",
 					}}
 				>
 					<Link
