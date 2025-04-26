@@ -28,7 +28,7 @@ const CaseStudy2 = () => {
 				}}
 			>
 				<Link
-					to="/"
+					to="/#projects"
 					style={{
 						display: "flex",
 						alignItems: "center",
