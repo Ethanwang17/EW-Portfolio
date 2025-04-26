@@ -314,7 +314,7 @@ const CaseStudy4 = () => {
 										color: "#222",
 									}}
 								>
-									12,000+
+									10,000+
 								</h3>
 								<p
 									style={{

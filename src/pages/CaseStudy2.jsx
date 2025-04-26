@@ -102,7 +102,9 @@ const CaseStudy2 = () => {
 							TSMC
 						</span>
 						<span style={{color: "#777"}}>•</span>
-						<span style={{color: "#777"}}>Software Engineer Internship</span>
+						<span style={{color: "#777"}}>
+							Software Engineer Internship
+						</span>
 					</div>
 				</div>
 			</motion.nav>
@@ -334,7 +336,7 @@ const CaseStudy2 = () => {
 										color: "#222",
 									}}
 								>
-									15%
+									25%
 								</h3>
 								<p
 									style={{
@@ -342,7 +344,7 @@ const CaseStudy2 = () => {
 										color: "#555",
 									}}
 								>
-									Reduction in system downtime
+									fewer employee support tickets submitted{" "}
 								</p>
 							</div>
 						</div>
@@ -357,20 +359,20 @@ const CaseStudy2 = () => {
 								textAlign: "center",
 							}}
 						>
-							The Human Resources department at TSMC was
-							struggling with a legacy system that could no longer
-							keep up with the scale of operations or the demands
-							of modern employees. I was brought on as a Software
-							Engineer Intern to lead the development of the
-							frontend for a complete overhaul of this system,
-							working directly with senior engineers and HR
-							stakeholders. My role extended beyond just building
-							React components—I contributed to backend API
-							design, database optimization, and cloud deployment
-							using Microsoft Azure. The result was a secure,
-							scalable, and responsive web application that
-							significantly improved HR operations and employee
-							satisfaction.
+							Before this project, TSMC’s HR processes were
+							heavily dependent on manually maintained Excel
+							spreadsheets, resulting in scattered, error-prone
+							workflows. Routine tasks like onboarding, updating
+							records, and managing housing assignments were slow
+							and frustrating for both HR staff and employees. I
+							joined as a Software Engineer Intern to help lead
+							the overhaul—designing a modern frontend experience,
+							collaborating on backend API architecture,
+							optimizing database performance, and deploying
+							everything to Microsoft Azure. As a result, we
+							created a unified, cloud-based HR application that
+							replaced dozens of inefficient spreadsheets with a
+							fast, secure, and intuitive platform.
 						</p>
 					</motion.div>
 				</div>
@@ -434,11 +436,14 @@ const CaseStudy2 = () => {
 							marginBottom: "30px",
 						}}
 					>
-						The legacy HR system was slow, prone to errors, and
-						difficult for employees to use—especially across
-						different devices. Our goal was to rebuild it from the
-						ground up with a modern tech stack, focusing on
-						usability, speed, and scalability.
+						The previous HR system wasn’t truly a system—it was a
+						collection of Excel files, internal forms, and
+						disconnected databases patched together over time. This
+						made it difficult to find information quickly,
+						introduced frequent human errors, and created
+						significant version control issues. Our goal was to
+						rebuild it from the ground up with a modern tech stack,
+						focusing on usability, speed, and scalability.
 					</p>
 
 					<div
@@ -576,10 +581,10 @@ const CaseStudy2 = () => {
 					>
 						We interviewed internal users (HR staff and employees)
 						and conducted usability testing on the old system. We
-						discovered: Slow query speeds were frustrating users,
-						especially during onboarding or payroll weeks. The
-						mobile experience was nearly unusable. The interface
-						lacked intuitive navigation, especially for
+						discovered: Slow speeds were frustrating users,
+						especially during onboarding or payroll weeks. There was
+						a lot of misinformation and incorrect data. The
+						interface lacked intuitive navigation, especially for
 						non-technical users. We also worked with the backend
 						team to define API requirements and security standards,
 						particularly around authentication, authorization, and
@@ -931,8 +936,8 @@ const CaseStudy2 = () => {
 						}}
 					>
 						"The new system feels like night and day. We're no
-						longer held back by clunky interfaces or slow loading
-						times—and our team can finally focus on people, not
+						longer held back by clunky sheets or slow processing
+						times. Our team can finally focus on people, not
 						process."
 						<footer
 							style={{
@@ -990,7 +995,7 @@ const CaseStudy2 = () => {
 								boxShadow: "0 2px 8px rgba(0, 0, 0, 0.05)",
 							}}
 						>
-							React.js (frontend)
+							React.js
 						</span>
 						<span
 							style={{
@@ -1002,7 +1007,7 @@ const CaseStudy2 = () => {
 								boxShadow: "0 2px 8px rgba(0, 0, 0, 0.05)",
 							}}
 						>
-							Tailwind CSS
+							CSS
 						</span>
 						<span
 							style={{
@@ -1014,7 +1019,7 @@ const CaseStudy2 = () => {
 								boxShadow: "0 2px 8px rgba(0, 0, 0, 0.05)",
 							}}
 						>
-							.NET Core / C# (backend API)
+							.NET Core / C#
 						</span>
 						<span
 							style={{
@@ -1026,7 +1031,7 @@ const CaseStudy2 = () => {
 								boxShadow: "0 2px 8px rgba(0, 0, 0, 0.05)",
 							}}
 						>
-							Microsoft Azure (deployment)
+							Microsoft Azure
 						</span>
 						<span
 							style={{
@@ -1038,7 +1043,7 @@ const CaseStudy2 = () => {
 								boxShadow: "0 2px 8px rgba(0, 0, 0, 0.05)",
 							}}
 						>
-							SQL Server (relational database)
+							SQL Server
 						</span>
 						<span
 							style={{
@@ -1050,7 +1055,7 @@ const CaseStudy2 = () => {
 								boxShadow: "0 2px 8px rgba(0, 0, 0, 0.05)",
 							}}
 						>
-							Postman & Swagger (API testing/documentation)
+							Git + Azure DevOps
 						</span>
 						<span
 							style={{
@@ -1062,112 +1067,10 @@ const CaseStudy2 = () => {
 								boxShadow: "0 2px 8px rgba(0, 0, 0, 0.05)",
 							}}
 						>
-							Git + Azure DevOps Pipelines
-						</span>
-						<span
-							style={{
-								padding: "8px 16px",
-								backgroundColor: "#faf9f6",
-								borderRadius: "100px",
-								fontSize: "0.9rem",
-								color: "#555",
-								boxShadow: "0 2px 8px rgba(0, 0, 0, 0.05)",
-							}}
-						>
-							Figma (UI mockups)
+							Figma
 						</span>
 					</div>
 				</motion.div>
-
-				{/* Call to Action */}
-				{/* <motion.div
-					initial={{opacity: 0, y: 30}}
-					whileInView={{opacity: 1, y: 0}}
-					viewport={{once: true}}
-					transition={{duration: 0.6}}
-					style={{
-						padding: "60px",
-						borderRadius: "20px",
-						backgroundColor: "#fff",
-						boxShadow: "0 4px 20px rgba(0, 0, 0, 0.05)",
-						textAlign: "center",
-						marginBottom: "60px",
-					}}
-				>
-					<h2
-						style={{
-							fontSize: "2rem",
-							fontWeight: 700,
-							marginBottom: "20px",
-							color: "#222",
-						}}
-					>
-						Let's Work Together
-					</h2>
-					<p
-						style={{
-							fontSize: "1.1rem",
-							lineHeight: 1.6,
-							color: "#555",
-							marginBottom: "30px",
-							maxWidth: "600px",
-							margin: "0 auto 30px",
-						}}
-					>
-						Interested in discussing projects or opportunities? I'd
-						love to hear from you!
-					</p>
-					<Link
-						to="/contact"
-						style={{
-							display: "inline-flex",
-							alignItems: "center",
-							gap: "10px",
-							textDecoration: "none",
-							color: "#222",
-							fontWeight: 600,
-							padding: "14px 30px",
-							backgroundColor: "#faf9f6",
-							borderRadius: "100px",
-							boxShadow: "0 4px 12px rgba(0, 0, 0, 0.05)",
-							transition: "transform 0.3s, box-shadow 0.3s",
-						}}
-						onMouseOver={(e) => {
-							e.currentTarget.style.transform = "scale(1.05)";
-							e.currentTarget.style.boxShadow =
-								"0 6px 16px rgba(0, 0, 0, 0.08)";
-						}}
-						onMouseOut={(e) => {
-							e.currentTarget.style.transform = "scale(1)";
-							e.currentTarget.style.boxShadow =
-								"0 4px 12px rgba(0, 0, 0, 0.05)";
-						}}
-					>
-						Get in Touch
-						<svg
-							width="18"
-							height="18"
-							viewBox="0 0 24 24"
-							fill="none"
-							xmlns="http://www.w3.org/2000/svg"
-						>
-							<path
-								d="M5 12H19"
-								stroke="currentColor"
-								strokeWidth="2"
-								strokeLinecap="round"
-								strokeLinejoin="round"
-							/>
-							<path
-								d="M12 5L19 12L12 19"
-								stroke="currentColor"
-								strokeWidth="2"
-								strokeLinecap="round"
-								strokeLinejoin="round"
-							/>
-						</svg>
-					</Link>
-				</motion.div> */}
 
 				{/* Footer Navigation */}
 				<div

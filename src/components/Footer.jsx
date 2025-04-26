@@ -40,7 +40,7 @@ const Footer = () => {
 						<InteractiveHoverButton>Github</InteractiveHoverButton>
 					</a>
 					<a
-						href="www.linkedin.com/in/ethanwang17"
+						href="https://linkedin.com/in/ethanwang17"
 						target="_blank"
 						rel="noopener noreferrer"
 					>
@@ -49,11 +49,10 @@ const Footer = () => {
 						</InteractiveHoverButton>
 					</a>
 					<a
-						href="https://twitter.com"
-						target="_blank"
+						href="mailto:2ethanwang@gmail.com"
 						rel="noopener noreferrer"
 					>
-						<InteractiveHoverButton>Resume</InteractiveHoverButton>
+						<InteractiveHoverButton>Email</InteractiveHoverButton>
 					</a>
 				</div>
 

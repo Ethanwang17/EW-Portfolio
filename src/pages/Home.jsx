@@ -160,7 +160,7 @@ const Home = () => {
 				<motion.div
 					initial={{opacity: 0, x: -100}}
 					whileInView={{opacity: 1, x: 0}}
-					viewport={{once: true, margin: "-300px"}}
+					viewport={{once: true, margin: "-50px"}}
 					transition={{
 						duration: 1,
 						type: "spring",
@@ -182,7 +182,7 @@ const Home = () => {
 						title="Ticket Alerts App"
 						company="Ticket Genie"
 						year="2024"
-						description="Pitched the original prototype and led design for a simpler app that brings Snapchatters closer to their friends."
+						description="Automating show discovery through real-time ticket monitoring and Discord notifications."
 						imageSrc="/images/Ticket Genie.jpg"
 						buttonText="Read the Case Study"
 						icon={
@@ -201,7 +201,7 @@ const Home = () => {
 						title="HR Management"
 						company="TSMC"
 						year="2020"
-						description="Redesigning job recommendations based on job seeker activity."
+						description="Simplifying employee relocation and housing logistics for TSMC’s workforce."
 						imageSrc="/images/TSMC.jpg"
 						buttonText="Read the Case Study"
 						icon={
@@ -217,10 +217,10 @@ const Home = () => {
 					/>
 
 					<ProjectCard
-						title="Eco-Conscious Transportation Planner"
+						title="Eco-Conscious Transportation"
 						company="X-Scape"
 						year="2020"
-						description="Improving a key element in the job seeker experience."
+						description="Helping travelers make greener choices by comparing carbon emissions across transportation options."
 						imageSrc="/images/X-scape.jpg"
 						buttonText="Read the Case Study"
 						icon={
@@ -239,7 +239,7 @@ const Home = () => {
 						title="AI-Powered Health App"
 						company="Mindscape"
 						year="2019"
-						description="Dish-level reviews for ordering confidently. Case study coming soon."
+						description="Bringing biometric insights to mental health by detecting early signs of emotional changes."
 						imageSrc="/images/Mindscape.jpg"
 						icon={
 							<div>

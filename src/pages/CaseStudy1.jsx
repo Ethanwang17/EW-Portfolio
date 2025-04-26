@@ -174,7 +174,7 @@ const CaseStudy1 = () => {
 								boxShadow: "0 2px 8px rgba(0, 0, 0, 0.05)",
 							}}
 						>
-							UX Design
+							Data Scraping
 						</span>
 						<span
 							style={{
@@ -186,7 +186,7 @@ const CaseStudy1 = () => {
 								boxShadow: "0 2px 8px rgba(0, 0, 0, 0.05)",
 							}}
 						>
-							Web Development
+							Automation Engineering
 						</span>
 						<span
 							style={{
@@ -198,7 +198,7 @@ const CaseStudy1 = () => {
 								boxShadow: "0 2px 8px rgba(0, 0, 0, 0.05)",
 							}}
 						>
-							Product Strategy
+							Real-Time Systems
 						</span>
 					</div>
 				</motion.div>
@@ -369,15 +369,13 @@ const CaseStudy1 = () => {
 								textAlign: "center",
 							}}
 						>
-							Ticket Genie is an automated system that
-							continuously scrapes private ticketing platforms
-							(FillASeat and House Seats Las Vegas), stores
-							real-time data in a PostgreSQL database, and sends
-							personalized Discord notifications to users about
-							newly available shows. The system includes blacklist
-							functionality, allowing users to customize what
-							notifications they receive, and is deployed on
-							Heroku for reliable uptime.
+							Ticket Genie is a cloud-hosted, two-bot system that
+							keeps a constant pulse on two invite-only ticket
+							platforms and pushes personalized Discord alerts the
+							moment new performances drop. Running 24/7 on Heroku
+							with a PostgreSQL backbone, it marries fast,
+							headless scraping with per-user preferences so
+							members never miss limited-availability shows again.
 						</p>
 					</motion.div>
 				</div>
@@ -441,10 +439,12 @@ const CaseStudy1 = () => {
 							marginBottom: "30px",
 						}}
 					>
-						Manually checking for new entertainment listings on
-						invite-only platforms is tedious, unreliable, and often
-						results in missed opportunities. Users wanted instant
-						updates and better personalization.
+						Manually hunting for tickets on private entertainment
+						sites is a race against the clock and a chore that
+						drains enthusiasm. Listings appear at unpredictable
+						hours, disappear just as quickly, and live behind login
+						walls that defeat ordinary RSS or push-notification
+						tools.
 					</p>
 
 					<div
@@ -480,7 +480,7 @@ const CaseStudy1 = () => {
 								}}
 							>
 								Automating login, scraping, and parsing of
-								websites with varying formats (JSONP, HTML)
+								websites with varying formats
 							</li>
 							<li
 								style={{
@@ -502,7 +502,7 @@ const CaseStudy1 = () => {
 								}}
 							>
 								Providing per-user customization for alerts in a
-								group communication environment (Discord)
+								group communication environment
 							</li>
 						</ul>
 					</div>
@@ -584,20 +584,47 @@ const CaseStudy1 = () => {
 						>
 							Key Insights:
 						</h3>
-						<p
+						<ul
 							style={{
-								fontSize: "1.05rem",
-								lineHeight: 1.6,
-								color: "#555",
-								marginBottom: "20px",
+								paddingLeft: "20px",
 							}}
 						>
-							Shows are time-sensitive and need &lt;3 min alert
-							delivery for high value. Blacklist features are
-							essential for managing user fatigue. Hosting on
-							Heroku with Procfile ensures background job support
-							and environment flexibility.
-						</p>
+							<li
+								style={{
+									fontSize: "1.05rem",
+									lineHeight: 1.6,
+									color: "#555",
+									marginBottom: "10px",
+								}}
+							>
+								Show alerts are time-sensitive and need &lt;3
+								min alert delivery for high value
+							</li>
+							<li
+								style={{
+									fontSize: "1.05rem",
+									lineHeight: 1.6,
+									color: "#555",
+									marginBottom: "10px",
+								}}
+							>
+								Blacklist / keyword filters to stop unwanted
+								genres or venues from flooding DMs
+							</li>
+							<li
+								style={{
+									fontSize: "1.05rem",
+									lineHeight: 1.6,
+									color: "#555",
+									marginBottom: "10px",
+								}}
+							>
+								Slash-command interface (/blacklist add "Magic
+								Show", /alerts pause) so non-technical users
+								could self-service settings without bot
+								restarts.
+							</li>
+						</ul>
 					</div>
 				</motion.div>
 
@@ -866,8 +893,9 @@ const CaseStudy1 = () => {
 							margin: "40px 0",
 						}}
 					>
-						🗣️ "I used to miss shows all the time. Now I get pings
-						on Discord the second something drops—it's perfect."
+						"I used to cycle through both sites all day to see
+						sold-out notices. Now Ticket Genie pings me and tickets
+						are secured with no stress."
 						<footer
 							style={{
 								marginTop: "15px",
@@ -877,7 +905,7 @@ const CaseStudy1 = () => {
 								fontStyle: "normal",
 							}}
 						>
-							— Avid FillASeat user
+							— Avid Ticket Genie user
 						</footer>
 					</blockquote>
 				</motion.div>
@@ -924,7 +952,7 @@ const CaseStudy1 = () => {
 								boxShadow: "0 2px 8px rgba(0, 0, 0, 0.05)",
 							}}
 						>
-							Python (Scraping & Bot Logic)
+							Python
 						</span>
 						<span
 							style={{
@@ -936,8 +964,7 @@ const CaseStudy1 = () => {
 								boxShadow: "0 2px 8px rgba(0, 0, 0, 0.05)",
 							}}
 						>
-							Discord API (py-cord) (Notification & Slash
-							Commands)
+							Discord API
 						</span>
 						<span
 							style={{
@@ -949,7 +976,7 @@ const CaseStudy1 = () => {
 								boxShadow: "0 2px 8px rgba(0, 0, 0, 0.05)",
 							}}
 						>
-							PostgreSQL (Show and user data tracking)
+							PostgreSQL
 						</span>
 						<span
 							style={{
@@ -961,7 +988,7 @@ const CaseStudy1 = () => {
 								boxShadow: "0 2px 8px rgba(0, 0, 0, 0.05)",
 							}}
 						>
-							Requests & Regex (Web scraping and JSONP parsing)
+							Selenium
 						</span>
 						<span
 							style={{
@@ -973,32 +1000,7 @@ const CaseStudy1 = () => {
 								boxShadow: "0 2px 8px rgba(0, 0, 0, 0.05)",
 							}}
 						>
-							asyncio / subprocess (Concurrent bot execution)
-						</span>
-						<span
-							style={{
-								padding: "8px 16px",
-								backgroundColor: "#faf9f6",
-								borderRadius: "100px",
-								fontSize: "0.9rem",
-								color: "#555",
-								boxShadow: "0 2px 8px rgba(0, 0, 0, 0.05)",
-							}}
-						>
-							Heroku (Deployment & background process management)
-						</span>
-						<span
-							style={{
-								padding: "8px 16px",
-								backgroundColor: "#faf9f6",
-								borderRadius: "100px",
-								fontSize: "0.9rem",
-								color: "#555",
-								boxShadow: "0 2px 8px rgba(0, 0, 0, 0.05)",
-							}}
-						>
-							psycopg2-binary, pytz (Database & time zone
-							handling)
+							Heroku
 						</span>
 					</div>
 				</motion.div>

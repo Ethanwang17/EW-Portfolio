@@ -24,10 +24,10 @@ const About = () => {
 					transition={{duration: 0.8, delay: 0.2}}
 				>
 					<p>
-						I craft sleek, user-focused web experiences using modern
-						frameworks and tools. From startups to global teams, I
-						build intuitive, scalable interfaces that leave a
-						lasting impact.
+						I’m a software developer passionate about transforming
+						design concepts into engaging digital experiences. I
+						focus on building products that feel effortless to use
+						and create real value for people.
 					</p>
 				</motion.div>
 
@@ -54,9 +54,8 @@ const About = () => {
 						transition={{duration: 0.8, delay: 0.6}}
 					>
 						<p>
-							With a strong eye for design and deep technical
-							skills, I bring modern web applications to life—from
-							concept to deployment.
+							Always learning, always building—focused on growth
+							through hands-on problem solving.
 						</p>
 					</motion.div>
 				</div>

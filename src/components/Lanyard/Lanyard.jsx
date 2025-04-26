@@ -33,10 +33,59 @@ export default function Lanyard({
 	fov = 20,
 	transparent = true,
 }) {
+	// State for dynamic camera Z position
+	const [cameraZ, setCameraZ] = useState(position[2]);
+	// State for dynamic anchor Y position
+	const [anchorY, setAnchorY] = useState(4.5); // Default Y position of the anchor group
+
+	useEffect(() => {
+		const handleResize = () => {
+			const minWidth = 768;
+			const maxWidth = 1920; // Adjust as needed for your definition of fullscreen
+			const minZ = 40; // Z position for narrow screens (adjust as needed)
+			const maxZ = position[2]; // Original Z position for wide screens
+			const minY = 6.4; // Y position for narrow screens (higher value = higher anchor)
+			const maxY = 4.5; // Y position for wide screens (original value)
+
+			const currentWidth = window.innerWidth;
+
+			// Clamp the width within the defined range
+			const clampedWidth = Math.max(
+				minWidth,
+				Math.min(currentWidth, maxWidth)
+			);
+
+			// Calculate the interpolation factor (0 at minWidth, 1 at maxWidth)
+			const factor = (clampedWidth - minWidth) / (maxWidth - minWidth);
+
+			// Interpolate the Z position
+			const newZ = minZ + (maxZ - minZ) * factor;
+
+			// Interpolate Y position (higher up on narrow screens)
+			const newAnchorY = minY + (maxY - minY) * factor; // Interpolates from minY to maxY as factor goes 0 to 1
+
+			setCameraZ(newZ);
+			setAnchorY(newAnchorY);
+		};
+
+		// Set initial position
+		handleResize();
+
+		// Add resize listener
+		window.addEventListener("resize", handleResize);
+
+		// Cleanup listener on component unmount
+		return () => window.removeEventListener("resize", handleResize);
+	}, [position]); // Re-run effect if default position prop changes
+
 	return (
 		<div className="lanyard-wrapper">
 			<Canvas
-				camera={{position: position, fov: fov}}
+				key={cameraZ}
+				camera={{
+					position: [position[0], position[1], cameraZ],
+					fov: fov,
+				}}
 				gl={{
 					alpha: transparent,
 					powerPreference: "high-performance",
@@ -53,7 +102,7 @@ export default function Lanyard({
 			>
 				<ambientLight intensity={Math.PI} />
 				<Physics gravity={gravity} timeStep={1 / 60}>
-					<Band />
+					<Band anchorY={anchorY} />
 				</Physics>
 				<Environment blur={0.75}>
 					<Lightformer
@@ -89,7 +138,7 @@ export default function Lanyard({
 		</div>
 	);
 }
-function Band({maxSpeed = 50, minSpeed = 0}) {
+function Band({maxSpeed = 50, minSpeed = 0, anchorY}) {
 	const band = useRef(),
 		fixed = useRef(),
 		j1 = useRef(),
@@ -190,7 +239,7 @@ function Band({maxSpeed = 50, minSpeed = 0}) {
 	return (
 		<>
 			{/* Change Badge Position */}
-			<group position={[2.5, 4.5, 0]}>
+			<group position={[2.5, anchorY, 0]}>
 				<RigidBody ref={fixed} {...segmentProps} type="fixed" />
 				<RigidBody position={[0.5, 0, 0]} ref={j1} {...segmentProps}>
 					<BallCollider args={[0.1]} />

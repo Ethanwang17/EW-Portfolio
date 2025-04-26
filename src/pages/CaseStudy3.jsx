@@ -267,8 +267,8 @@ const CaseStudy3 = () => {
 							A sustainability-focused travel assistant that
 							estimates carbon emissions across different travel
 							methods, recommends greener alternatives, and offers
-							carbon offsetting resources—all through an intuitive
-							and educational platform.
+							carbon offsetting resources. All through an
+							intuitive and educational platform.
 						</p>
 
 						<div
@@ -325,7 +325,7 @@ const CaseStudy3 = () => {
 										color: "#222",
 									}}
 								>
-									12,000+
+									95%
 								</h3>
 								<p
 									style={{
@@ -333,8 +333,7 @@ const CaseStudy3 = () => {
 										color: "#555",
 									}}
 								>
-									users served through live deployment and
-									campus demos
+									user satisfaction rate from feedback surveys
 								</p>
 							</div>
 							<div
@@ -691,7 +690,8 @@ const CaseStudy3 = () => {
 					>
 						We created X-Scape, a responsive web application that
 						educates and empowers users to reduce their carbon
-						footprint through smarter travel.
+						footprint through smarter travel and eco-conscious
+						choices.
 					</p>
 
 					<div
@@ -725,7 +725,7 @@ const CaseStudy3 = () => {
 									color: "#222",
 								}}
 							>
-								Carbon Emission Calculator
+								Eco-Friendly Car Quiz
 							</h3>
 							<p
 								style={{
@@ -734,9 +734,9 @@ const CaseStudy3 = () => {
 									color: "#555",
 								}}
 							>
-								Users enter their origin and destination and
-								instantly view CO₂ emissions by car, plane, and
-								train.
+								Users complete a short, lifestyle-focused quiz
+								and X-Scape recommends the best low-emission
+								vehicle options.
 							</p>
 						</motion.div>
 
@@ -798,7 +798,7 @@ const CaseStudy3 = () => {
 									color: "#222",
 								}}
 							>
-								Offset Integration
+								Car Compare Tool
 							</h3>
 							<p
 								style={{
@@ -807,8 +807,10 @@ const CaseStudy3 = () => {
 									color: "#555",
 								}}
 							>
-								Provides links to verified carbon offsetting
-								programs for direct action.
+								Empowers users to line up multiple vehicles
+								side-by-side. Helping shoppers pinpoint the most
+								sustainable car that fits their budget and
+								lifestyle.
 							</p>
 						</motion.div>
 					</div>
@@ -885,13 +887,64 @@ const CaseStudy3 = () => {
 							fontSize: "1.05rem",
 							lineHeight: 1.7,
 							color: "#555",
-							marginBottom: "30px",
+							marginBottom: "15px",
 						}}
 					>
-						X-Scape was launched to the public via xscape.web.app
-						and received strong feedback from students, educators,
-						and sustainability advocates.
+						X-Scape was launched to the public and received strong
+						feedback from students, educators, and sustainability
+						advocates.
 					</p>
+
+					<a
+						href="https://xscape.web.app"
+						target="_blank"
+						rel="noopener noreferrer"
+						style={{
+							display: "inline-flex",
+							alignItems: "center",
+							gap: "8px",
+							backgroundColor: "#222",
+							color: "#fff",
+							fontWeight: 600,
+							padding: "12px 20px",
+							borderRadius: "8px",
+							textDecoration: "none",
+							marginBottom: "30px",
+							boxShadow: "0 4px 12px rgba(0, 0, 0, 0.1)",
+							transition:
+								"transform 0.3s, box-shadow 0.3s, background-color 0.3s",
+						}}
+						onMouseOver={(e) => {
+							e.currentTarget.style.transform = "scale(1.03)";
+							e.currentTarget.style.boxShadow =
+								"0 6px 16px rgba(0, 0, 0, 0.15)";
+							e.currentTarget.style.backgroundColor = "#444";
+						}}
+						onMouseOut={(e) => {
+							e.currentTarget.style.transform = "scale(1)";
+							e.currentTarget.style.boxShadow =
+								"0 4px 12px rgba(0, 0, 0, 0.1)";
+							e.currentTarget.style.backgroundColor = "#222";
+						}}
+					>
+						<svg
+							width="18"
+							height="18"
+							viewBox="0 0 24 24"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
+							style={{marginRight: "4px"}}
+						>
+							<path
+								d="M10 6H6C4.89543 6 4 6.89543 4 8V18C4 19.1046 4.89543 20 6 20H16C17.1046 20 18 19.1046 18 18V14M14 4H20M20 4V10M20 4L10 14"
+								stroke="currentColor"
+								strokeWidth="2"
+								strokeLinecap="round"
+								strokeLinejoin="round"
+							/>
+						</svg>
+						View the X-Scape Website
+					</a>
 
 					<blockquote
 						style={{
@@ -908,9 +961,9 @@ const CaseStudy3 = () => {
 							margin: "40px 0",
 						}}
 					>
-						🗣️ "This project transformed the way I think about
-						travel. I had no idea how much my daily choices added up
-						until I saw it clearly laid out."
+						"This project transformed the way I think about travel.
+						I had no idea how much my daily choices added up until I
+						saw it clearly laid out."
 						<footer
 							style={{
 								marginTop: "15px",
@@ -920,7 +973,7 @@ const CaseStudy3 = () => {
 								fontStyle: "normal",
 							}}
 						>
-							— User from UW Capstone Showcase
+							— X-Scape user
 						</footer>
 					</blockquote>
 				</motion.div>
@@ -967,7 +1020,7 @@ const CaseStudy3 = () => {
 								boxShadow: "0 2px 8px rgba(0, 0, 0, 0.05)",
 							}}
 						>
-							React (Frontend UI)
+							React
 						</span>
 						<span
 							style={{
@@ -979,7 +1032,7 @@ const CaseStudy3 = () => {
 								boxShadow: "0 2px 8px rgba(0, 0, 0, 0.05)",
 							}}
 						>
-							Node.js (Backend logic)
+							Firebase
 						</span>
 						<span
 							style={{
@@ -991,43 +1044,7 @@ const CaseStudy3 = () => {
 								boxShadow: "0 2px 8px rgba(0, 0, 0, 0.05)",
 							}}
 						>
-							Express (API handling)
-						</span>
-						<span
-							style={{
-								padding: "8px 16px",
-								backgroundColor: "#faf9f6",
-								borderRadius: "100px",
-								fontSize: "0.9rem",
-								color: "#555",
-								boxShadow: "0 2px 8px rgba(0, 0, 0, 0.05)",
-							}}
-						>
-							Firebase (Hosting + Database)
-						</span>
-						<span
-							style={{
-								padding: "8px 16px",
-								backgroundColor: "#faf9f6",
-								borderRadius: "100px",
-								fontSize: "0.9rem",
-								color: "#555",
-								boxShadow: "0 2px 8px rgba(0, 0, 0, 0.05)",
-							}}
-						>
-							Google Maps API (Travel data & route mapping)
-						</span>
-						<span
-							style={{
-								padding: "8px 16px",
-								backgroundColor: "#faf9f6",
-								borderRadius: "100px",
-								fontSize: "0.9rem",
-								color: "#555",
-								boxShadow: "0 2px 8px rgba(0, 0, 0, 0.05)",
-							}}
-						>
-							Figma (UI/UX design and prototyping)
+							Figma
 						</span>
 					</div>
 				</motion.div>
