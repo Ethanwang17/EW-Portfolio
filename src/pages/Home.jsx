@@ -1,5 +1,6 @@
 // home.jsx
-import React, {useState, useEffect} from "react";
+import React, {useState, useEffect, useRef} from "react";
+import {useLocation} from "react-router-dom";
 import Dock from "../components/Dock/Dock";
 import Lanyard from "../components/Lanyard/Lanyard";
 import ProjectCard from "../components/ProjectCard/ProjectCard";
@@ -17,6 +18,7 @@ import {
 
 const Home = () => {
 	const [showLanyard, setShowLanyard] = useState(false);
+	const location = useLocation();
 
 	const dockItems = [
 		{
@@ -70,6 +72,22 @@ const Home = () => {
 
 		return () => clearTimeout(timer);
 	}, []);
+
+	// Effect to handle scrolling based on hash
+	useEffect(() => {
+		if (location.hash === "#projects") {
+			// Use setTimeout to allow the layout to potentially stabilize
+			const scrollTimer = setTimeout(() => {
+				const element = document.getElementById("projects");
+				if (element) {
+					// Remove behavior: 'smooth' for instant scroll
+					element.scrollIntoView();
+				}
+			}, 100); // 100ms delay, adjust if needed
+
+			return () => clearTimeout(scrollTimer); // Cleanup timeout on unmount or hash change
+		}
+	}, [location.hash]); // Re-run effect if the hash changes
 
 	return (
 		<div className="home-container">
@@ -201,7 +219,7 @@ const Home = () => {
 						title="HR Management"
 						company="TSMC"
 						year="2020"
-						description="Simplifying employee relocation and housing logistics for TSMC’s workforce."
+						description="Simplifying employee relocation and housing logistics for TSMC's workforce."
 						imageSrc="/images/TSMC.jpg"
 						buttonText="Read the Case Study"
 						icon={

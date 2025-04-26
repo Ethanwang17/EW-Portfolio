@@ -359,7 +359,7 @@ const CaseStudy2 = () => {
 								textAlign: "center",
 							}}
 						>
-							Before this project, TSMC’s HR processes were
+							Before this project, TSMC's HR processes were
 							heavily dependent on manually maintained Excel
 							spreadsheets, resulting in scattered, error-prone
 							workflows. Routine tasks like onboarding, updating
@@ -436,7 +436,7 @@ const CaseStudy2 = () => {
 							marginBottom: "30px",
 						}}
 					>
-						The previous HR system wasn’t truly a system—it was a
+						The previous HR system wasn't truly a system—it was a
 						collection of Excel files, internal forms, and
 						disconnected databases patched together over time. This
 						made it difficult to find information quickly,
@@ -1081,7 +1081,7 @@ const CaseStudy2 = () => {
 					}}
 				>
 					<Link
-						to="/"
+						to="/#projects"
 						style={{
 							display: "inline-flex",
 							alignItems: "center",
@@ -1095,7 +1095,6 @@ const CaseStudy2 = () => {
 							boxShadow: "0 4px 12px rgba(0, 0, 0, 0.05)",
 							transition: "transform 0.3s, box-shadow 0.3s",
 						}}
-						onClick={() => window.scrollTo(0, 0)}
 						onMouseOver={(e) => {
 							e.currentTarget.style.transform = "scale(1.05)";
 							e.currentTarget.style.boxShadow =

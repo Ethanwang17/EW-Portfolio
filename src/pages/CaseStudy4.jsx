@@ -1069,7 +1069,7 @@ const CaseStudy4 = () => {
 					}}
 				>
 					<Link
-						to="/"
+						to="/#projects"
 						style={{
 							display: "inline-flex",
 							alignItems: "center",
@@ -1083,7 +1083,6 @@ const CaseStudy4 = () => {
 							boxShadow: "0 4px 12px rgba(0, 0, 0, 0.05)",
 							transition: "transform 0.3s, box-shadow 0.3s",
 						}}
-						onClick={() => window.scrollTo(0, 0)}
 						onMouseOver={(e) => {
 							e.currentTarget.style.transform = "scale(1.05)";
 							e.currentTarget.style.boxShadow =
