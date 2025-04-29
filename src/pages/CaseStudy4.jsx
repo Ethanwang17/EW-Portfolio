@@ -213,18 +213,22 @@ const CaseStudy4 = () => {
 						borderRadius: "20px",
 						overflow: "hidden",
 						height: "auto",
-						maxWidth: "100%",
+						maxWidth: "50%",
+						display: "flex",
+						justifyContent: "center",
+						alignItems: "center",
+						margin: "0 auto",
 					}}
 				>
 					<img
 						src="/images/Mindscape Hero Mockup.png"
 						alt="Mindscape health monitoring dashboard showing biometric data visualization"
 						style={{
-							width: "100%",
+							width: "auto",
+							maxWidth: "100%",
 							height: "auto",
 							objectFit: "contain",
 							display: "block",
-							margin: "0 auto",
 						}}
 					/>
 				</motion.div>
